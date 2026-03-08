@@ -30,6 +30,7 @@
         "リプ": {
             "odds": "r",
             "simplename": "リプ",
+            "prob": {"6": 8673},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [3,8,15,16], "R": null },
             "stop": { "L": null, "C": [3,8,16], "R": null },
@@ -50,6 +51,7 @@
         "リーチリプB1": {
             "odds": "r",
             "simplename": "リプ",
+            "prob": {"6": 70},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop":
@@ -73,6 +75,7 @@
         "リーチリプB2": {
             "odds": "r",
             "simplename": "リプ",
+            "prob": {"6": 19},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": 
@@ -94,6 +97,7 @@
         "リーチリプB3": {
             "odds": "r",
             "simplename": "リプ",
+            "prob": {"6": 70},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": 
@@ -118,6 +122,7 @@
         "リーチリプR1": {
             "odds": "r",
             "simplename": "リプ",
+            "prob": {"6": 74},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": 
@@ -140,6 +145,7 @@
         "リーチリプR2": {
             "odds": "r",
             "simplename": "リプ",
+            "prob": {"6": 72},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": 
@@ -159,6 +165,7 @@
         "3枚": {
             "odds": 3,
             "simplename": "3枚",
+            "prob": {"6": 1191},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
@@ -183,6 +190,7 @@
         "リーチ3-B": {
             "odds": 3,
             "simplename": "3枚",
+            "prob": {"6": 42},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": 
@@ -206,6 +214,7 @@
         "リーチ3-R": {
             "odds": 3,
             "simplename": "3枚",
+            "prob": {"6": 50},
             "push": {"L": 1, "C": null, "R": null},
             "pos": null,
             "stop": 
@@ -229,6 +238,7 @@
         "単チェ": {
             "odds": {"ok": 1, "ng": 0},
             "simplename": "単チェ",
+            "prob": {"6": 16},
             "push": null,
             "pos": null,
             "stop": 
@@ -247,6 +257,7 @@
         "スイカ": {
             "odds": {"ok":10, "ng":0},
             "simplename": "スイカ",
+            "prob": {"6": 1580},
             "push": null,
             "pos": null,
             "stop": 
@@ -270,6 +281,7 @@
         "同時スイカ": {
             "odds": {"ok":10,"ng":0},
             "simplename": "スイカ",
+            "prob": {"6": 14},
             "push": null,
             "pos": null,
             "stop": 
@@ -295,6 +307,7 @@
         "-G-": {
             "odds":  { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 7115},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [13,14,15,16,17], "R": null },
             "stop": { "L": null, "C": 17, "R": null },
@@ -317,6 +330,7 @@
         "-G-チェリー": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 427},
             "push": { "L": [2,3], "C": 1, "R": [2,3]},
             "pos": { "L": null, "C": [13,14,15,16,17], "R": null },
             "stop": 
@@ -339,6 +353,7 @@
         "-G-3": {
             "odds": { "ok": 15, "ng": 3},
             "simplename": {"ok": "15枚", "ng": "3枚"},
+            "prob": {"6": 648},
             "push": { "L": [2,3], "C": 1, "R": [2,3]},
             "pos": { "L": null, "C": [13,14,15,16,17], "R": null },
             "stop": 
@@ -360,6 +375,7 @@
         "-S-": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 7115},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
             "stop": { "L": null, "C": [2,7], "R": null },
@@ -383,6 +399,7 @@
         "-S-チェリー": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 427},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
             "stop": { "L": null, "C": [2,7], "R": null },
@@ -404,6 +421,7 @@
         "-S-3": {
             "odds": { "ok": 15, "ng": 3},
             "simplename": {"ok": "15枚", "ng": "3枚"},
+            "prob": {"6": 648},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
             "stop": { "L": null, "C": [2,7], "R": null},
@@ -424,6 +442,7 @@
         "-B-": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 7115},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
             "stop": { "L": [2,5,9,13,16,19], "C": 12, "R": null },
@@ -446,6 +465,7 @@
         "-B-チェリー": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 427},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
             "stop": { "L": [2,5,9,13,16,19], "C": 12, "R": null },
@@ -467,6 +487,7 @@
         "-B-3": {
             "odds": { "ok": 15, "ng": 3},
             "simplename": {"ok": "15枚", "ng": "3枚"},
+            "prob": {"6": 648},
             "push": { "L": [2,3], "C": 1, "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
             "stop": { "L": [2,5,9,13,16,19], "C": 12, "R": null },
@@ -486,6 +507,7 @@
         "--G": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 7115},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
             "stop": { "L": null, "C": null, "R": 17 },
@@ -508,6 +530,7 @@
         "--Gチェリー": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 427},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
             "stop": { "L": null, "C": null, "R": 17 },
@@ -528,6 +551,7 @@
         "--G3": {
             "odds": { "ok": 15, "ng": 3},
             "simplename": {"ok": "15枚", "ng": "3枚"},
+            "prob": {"6": 648},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
             "stop": { "L": null, "C": null, "R": 17 },
@@ -547,6 +571,7 @@
         "--S": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 7115},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
             "stop": { "L": null, "C": null, "R": [2,7] },
@@ -569,6 +594,7 @@
         "--Sチェリー": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 427},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
             "stop": 
@@ -593,6 +619,7 @@
         "--S3": {
             "odds": { "ok": 15, "ng": 3},
             "simplename": {"ok": "15枚", "ng": "3枚"},
+            "prob": {"6": 648},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
             "stop": { "L": null, "C": null, "R": [2,7] },
@@ -612,6 +639,7 @@
         "--B": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 7115},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
             "stop": { "L": null, "C": null, "R": 12 },
@@ -633,6 +661,7 @@
         "--Bチェリー": {
             "odds": { "ok": 15, "ng": 1},
             "simplename": {"ok": "15枚", "ng": "1枚"},
+            "prob": {"6": 427},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
             "stop": 
@@ -657,6 +686,7 @@
         "--B3": {
             "odds": {"ok":15, "ng":3 },
             "simplename": {"ok": "15枚", "ng": "3枚"},
+            "prob": {"6": 648},
             "push": { "L": [2,3], "C": [2,3], "R": 1 },
             "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
             "stop": 
@@ -678,6 +708,7 @@
         "ハズレ": {
             "odds": {"ok":0, "ng":0},
             "simplename": "ハズレ",
+            "prob": {"6": 4498},
             "push": null,
             "pos": null,
             "stop": 
@@ -695,6 +726,7 @@
         "チャンス": {
             "odds": {"ok":0, "ng":0 },
             "simplename": "ハズレ",
+            "prob": {"6": 27},
             "push": { "L": 1, "C": null, "R": null },
             "pos": null,
             "stop": 
