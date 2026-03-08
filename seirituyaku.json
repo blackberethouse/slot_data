@@ -1,373 +1,724 @@
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.*;
-import java.util.stream.Collectors;
-
-public class YakuCheck {
-
-    public static void main(String[] args) {
-        try {
-            String filePath = (args.length > 0) ? args[0] : "./src/seirituyaku.json";
-            String jsonContent = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
-            Object parsed = new SimpleJsonParser().parse(jsonContent);
-
-            if (!(parsed instanceof Map)) {
-                System.err.println("Root JSON is not an object.");
-                return;
+{
+    "allsymbol":[
+        {
+            "L":["gold","bar","silver","bella","bellb","cherrya","cherryb","watermelon","replay"],
+            "C":["gold","bar","silver","cherryb","bellb","watermelon","cherrya","blank","bella","replay"],
+            "R":["gold","bar","cherryb","silver","cherrya","bellb","blank","bella","watermelon","replay"]
+        }    
+    ],
+    "siyou":{
+        "役名":{
+            "odds": "配当",
+            "simplename": "基板上の役名",
+            "push": "押し順。nullは不問。数字はいずれかの番号で押さないとダメ",
+            "pos": "目押しの位置。nullは不問。そこで押さないとダメ",
+            "stop": "実際に止まることを許す位置。押し順ミスのときは無視",
+            "sup" : "優先停止位置。押し順ミスのときでも従うが、symを優先する",
+            "sym" : {
+                "ok": [
+                    "押し順が正しいときに止まる役",
+                    "左1stならば左はある程度自由なのが保証される"
+                ],
+                "ng": [
+                    "押し順ミスのときに止まる役",
+                    "どうあがいても止まるように各4コマスベリ以内必須"
+                ]
             }
-
-            Map<String, Object> root = (Map<String, Object>) parsed;
-            Map<String, Object> yakuMap = (Map<String, Object>) root.get("yaku");
-
-            // --- Handle allsymbols ---
-            List<String> allL = new ArrayList<>();
-            List<String> allC = new ArrayList<>();
-            List<String> allR = new ArrayList<>();
-            Object allSymObj = root.get("allsymbol");
-            if (allSymObj instanceof List) {
-                List<?> allSymList = (List<?>) allSymObj;
-                if (!allSymList.isEmpty() && allSymList.get(0) instanceof Map) {
-                    Map<String, Object> firstAllSym = (Map<String, Object>) allSymList.get(0);
-                    allL = flatten(firstAllSym.get("L"));
-                    allC = flatten(firstAllSym.get("C"));
-                    allR = flatten(firstAllSym.get("R"));
-                }
+        }
+    },
+    "yaku": {
+        "リプ": {
+            "odds": "r",
+            "simplename": "リプ",
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [3,8,15,16], "R": null },
+            "stop": { "L": null, "C": [3,8,16], "R": null },
+            "sup" : { "L": [1,2,4,8,13,14,16], "C": [2,3,4,6,7,8,14,15,16], "R": null},
+            "sym" : {
+                "ok": [
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"]}
+                ],
+                "ng": [
+                    { "L": "watermelon", "C": "bella", "R": ["silver","blank","bellb","cherrya"], "note":"1, 中段"},
+                    { "L": "watermelon", "C": "bella", "R": ["bar","gold","cherryb"], "note":"8,13,16, 右上がり"},
+                    { "L": "bar", "C": "replay", "R": "replay", "note": "2, BAR上段→下段揃い"},
+                    { "L": "replay", "C": "bella", "R": "replay", "note": "4,14, 右下がり"},
+                    { "L": "cherryb", "C": "bella", "R": "replay", "note":"4,14,と並んでハズレ回避"}
+                ]
             }
-
-            if (yakuMap == null) {
-                System.err.println("'yaku' field not found.");
-                return;
+        },
+        "リーチリプB1": {
+            "odds": "r",
+            "simplename": "リプ",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop":
+                { "L": [9,10,11,16,17,1,2,3,4,8], "C": [5,6,7,11,16,1], "R": null },
+            "sup":
+                { "L": [11], "C": [2,3,4,6,7,8,15,16], "R": [20,1,2] },
+            "sym" : { 
+                "ok": [
+                    { "L": "silver","C": "replay", "R": "watermelon", "note": "上段白7直撃"},
+                    { "L": "silver","C":["blank", "cherrya"],"R":["cherrya","bellb","blank","silver"] ,"note":"右下がり白7直撃"},
+                    { "L": "bella", "C":["blank", "cherrya"],"R":["bar","gold","cherryb"], "note": "中段白7直撃"},
+                    { "L": ["replay","bellb"], "C":["silver","cherryb","gold","bar"],"R":["cherrya","bellb","blank","silver"], "note":"下段白7直撃、ハズレ回避"}
+                ],
+                "ng": [
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
+                    { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
+                    { "L": ["cherryb", "replay"], "C": "bella", "R": "replay", "note":"ハズレ回避の右下がり and 目押しミス遅い"}
+                ]
             }
-
-            // Map to store: SymbolCombination string -> Set of simple names
-            Map<String, Set<String>> combinationToSimpleNames = new LinkedHashMap<>();
-            // Map to store: SymbolCombination string -> List of Yaku names (to display which yakus are involved)
-            Map<String, List<String>> combinationToYakus = new LinkedHashMap<>();
-            // Set to keep track of ALL used combinations (for unused check)
-            Set<String> usedCombinations = new HashSet<>();
-            // Map to store: Yaku name -> (Category -> List of SymbolCombinations)
-            Map<String, Map<String, List<List<String>>>> yakuToCategorizedCombinations = new LinkedHashMap<>();
-
-            for (Map.Entry<String, Object> entry : yakuMap.entrySet()) {
-                String yakuName = entry.getKey();
-                Object yakuDataObj = entry.getValue();
-
-                if (!(yakuDataObj instanceof Map)) continue;
-                Map<String, Object> yakuData = (Map<String, Object>) yakuDataObj;
-
-                Object simplenameObj = yakuData.get("simplename");
-                Object symObj = yakuData.get("sym");
+        },
+        "リーチリプB2": {
+            "odds": "r",
+            "simplename": "リプ",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": 
+                { "L": [1,3,7,12,14,16], "C": null, "R": null },
+            "sup": {"L": null, "C": [2,3,4,6,7,8,15,16], "R": null}, 
+            "sym" : {
+                "ok": [
+                    { "L": ["bella","replay"], "C": ["bellb","watermelon"], "R": ["bellb", "cherrya","silver","blank"], "note": "3列星揃いの可能性あり"},
+                    { "L": "watermelon", "C": ["cherrya","blank"], "R": "watermelon", "note":"スイカ右下がりハズレ"}
                 
-                // Key: "ok" or "ng" or "default", Value: List of Definitions
-                Map<String, List<Map<String, Object>>> categorizedSyms = new LinkedHashMap<>();
-
-                if (symObj instanceof List) {
-                    List<Map<String, Object>> defs = new ArrayList<>();
-                    for (Object o : (List<?>) symObj) {
-                        if (o instanceof Map) defs.add((Map<String, Object>) o);
-                    }
-                    categorizedSyms.put("default", defs);
-                } else if (symObj instanceof Map) {
-                    Map<String, Object> symMap = (Map<String, Object>) symObj;
-                    if (symMap.containsKey("ok")) {
-                        List<Map<String, Object>> okDefs = new ArrayList<>();
-                        Object okObj = symMap.get("ok");
-                        if (okObj instanceof List) {
-                            for (Object o : (List<?>) okObj) if (o instanceof Map) okDefs.add((Map<String, Object>) o);
-                        }
-                        categorizedSyms.put("ok", okDefs);
-                    }
-                    if (symMap.containsKey("ng")) {
-                        List<Map<String, Object>> ngDefs = new ArrayList<>();
-                        Object ngObj = symMap.get("ng");
-                        if (ngObj instanceof List) {
-                            for (Object o : (List<?>) ngObj) if (o instanceof Map) ngDefs.add((Map<String, Object>) o);
-                        }
-                        categorizedSyms.put("ng", ngDefs);
-                    }
-                }
-
-                Map<String, List<List<String>>> currentYakuCategories = new LinkedHashMap<>();
-
-                for (Map.Entry<String, List<Map<String, Object>>> catEntry : categorizedSyms.entrySet()) {
-                    String category = catEntry.getKey();
-                    List<Map<String, Object>> defs = catEntry.getValue();
-                    List<List<String>> categoryCombinations = new ArrayList<>();
-
-                    // Determine the specific simplename for this category
-                    String specificSimpleName = "Unknown";
-                    if (simplenameObj instanceof String) {
-                        specificSimpleName = (String) simplenameObj;
-                    } else if (simplenameObj instanceof Map) {
-                        Map<?, ?> sMap = (Map<?, ?>) simplenameObj;
-                        Object val = sMap.get(category);
-                        if (val == null && category.equals("default")) val = sMap.get("ok"); // Fallback
-                        if (val != null) specificSimpleName = val.toString();
-                    } else if (simplenameObj == null) {
-                        specificSimpleName = yakuName; // Fallback to yaku name if missing
-                    }
-
-                    for (Map<String, Object> def : defs) {
-                        List<String> lOptions = flatten(def.get("L"));
-                        List<String> cOptions = flatten(def.get("C"));
-                        List<String> rOptions = flatten(def.get("R"));
-
-                        for (String l : lOptions) {
-                            for (String c : cOptions) {
-                                for (String r : rOptions) {
-                                    List<String> combo = Arrays.asList(l, c, r);
-                                    categoryCombinations.add(combo);
-                                    
-                                    String comboKey = combo.toString();
-                                    usedCombinations.add(comboKey);
-                                    combinationToSimpleNames.computeIfAbsent(comboKey, k -> new LinkedHashSet<>()).add(specificSimpleName);
-                                    combinationToYakus.computeIfAbsent(comboKey, k -> new ArrayList<>()).add(yakuName + " (" + specificSimpleName + ")");
-                                }
-                            }
-                        }
-                    }
-                    currentYakuCategories.put(category, categoryCombinations);
-                }
-                yakuToCategorizedCombinations.put(yakuName, currentYakuCategories);
+                ],
+                "ng" :[
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
+                    { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
+                    { "L": ["cherryb", "replay"], "C": "bella", "R": "replay", "note":"ハズレ回避の右下がり and 目押しミス遅い"}
+                ]
             }
-
-            // Output all expanded syms for each yaku
-            System.out.println("=== Expanded Yaku Symbols ===");
-            for (Map.Entry<String, Map<String, List<List<String>>>> yakuEntry : yakuToCategorizedCombinations.entrySet()) {
-                System.out.println("Yaku: " + yakuEntry.getKey());
-                Map<String, List<List<String>>> categories = yakuEntry.getValue();
-                if (categories.isEmpty()) {
-                    System.out.println("  (None)");
-                } else {
-                    for (Map.Entry<String, List<List<String>>> catEntry : categories.entrySet()) {
-                        System.out.println("  Category: " + catEntry.getKey());
-                        for (List<String> combo : catEntry.getValue()) {
-                            System.out.println("    " + combo);
-                        }
-                    }
-                }
-                System.out.println();
+        },
+        "リーチリプB3": {
+            "odds": "r",
+            "simplename": "リプ",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": 
+                { "L": [1,3,8,10,13,15,17], "C": null, "R": null }
+            ,
+            "sup":
+                { "L": [3,10], "C": [2,3,4,6,7,8,15,16], "R": null }
+            ,
+            "sym": {
+                "ok": [
+                    { "L": "bella", "C":["bar","gold","cherryb","silver"], "R": "watermelon", "note": "星b絡みの星揃い可能性あり"},
+                    { "L":"gold","C":"replay","R": ["gold", "bar", "cherryb"], "note": "赤7対角、順押し赤7の可能性あり"},
+                    { "L":"bellb","C":"bella","R":["gold", "bar", "cherryb"], "note": "7星7"}
+                ],
+                "ng": [
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
+                    { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
+                    { "L": ["cherryb", "replay"], "C": "bella", "R": "replay", "note":"ハズレ回避の右下がり and 目押しミス遅い"}
+                ]
             }
-
-            // Output duplicates based on unique simple names
-            System.out.println("=== Overlapping Symbols (Different SimpleNames) ===");
-            boolean foundOverlap = false;
-            for (Map.Entry<String, Set<String>> entry : combinationToSimpleNames.entrySet()) {
-                Set<String> simpleNames = entry.getValue();
+        },
+        "リーチリプR1": {
+            "odds": "r",
+            "simplename": "リプ",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": 
+                { "L": [1,3,8,13,16], "C": null, "R": null },
+            "sup":
+                {"L":null, "C": [2,3,4,6,7,8,15,16], "R": null},
+            "sym": {
+                "ok": [
+                    { "L": "watermelon", "C": ["watermelon","bellb"], "R": "watermelon", "note": "スイカハズレ"},
+                    { "L": "bella", "C": ["gold", "bar", "cherryb", "silver"], "R": "replay", "note": "スイカハズレ"}
+                ],
+                "ng": [
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
+                    { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
+                    { "L": ["cherryb", "replay"], "C": "bella", "R": "replay", "note":"ハズレ回避の右下がり and 目押しミス遅い"}
+                ]
                 
-                if (simpleNames.size() > 1) {
-                    foundOverlap = true;
-                    System.out.println("Symbol: " + entry.getKey());
-                    System.out.println("  SimpleNames: " + simpleNames);
-                    List<String> yakus = combinationToYakus.get(entry.getKey());
-                    System.out.println("  Involved Yakus: " + new LinkedHashSet<>(yakus));
+            }
+        },
+        "リーチリプR2": {
+            "odds": "r",
+            "simplename": "リプ",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": 
+                { "L": [2,4,9,14,17], "C": 2, "R": 3 },
+            "sym" : {
+                "ok":[
+                    { "L": ["bar", "bellb"], "C": ["gold", "bar", "cherryb", "silver"], "R": "watermelon", "note": "ボーナス図柄系"},
+                    { "L": "replay", "C": ["watermelon","bellb"], "R": "replay"}
+                ],
+                "ng": [
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
+                    { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
+                    { "L": ["cherryb", "replay"], "C": "bella", "R": "replay", "note":"ハズレ回避の右下がりリプ and 目押しミス遅い"}
+                ]
+            }
+        },
+        "3枚": {
+            "odds": 3,
+            "simplename": "3枚",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sup": { "L": null, "C": [2,3,4,6,7,8,15,16], "R": [] },
+            "sym" : {
+                "ok": [
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ],
+                "ng": [
+                    { "L": ["gold","silver","bar", "bellb", "replay"], "C": ["bellb","cherrya"], "R":"bella", "note": "目押し成功1"},
+                    
+                    { "L": ["gold","silver","bar","replay"],"C": ["gold","bar","silver","cherryb"], "R": "replay", "note": "目押し失敗早い1" },
+                    
+                    { "L": ["bellb","replay"], "C": "bella", "R":"bella", "note": "目押し失敗遅い"}
+
+                ]
+            }
+        },
+        "リーチ3-B": {
+            "odds": 3,
+            "simplename": "3枚",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": 
+                {"L": [3,4,9,10,11,15,16,17,2], "C": null, "R": null },
+            "sup":  { "L": null, "C": [2,3,4,6,7,8,15,16], "R": null },
+            "sym" : {
+                "ok": [
+                    { "L": "gold", "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"]},
+                    { "L": ["bar","silver"], "C": ["watermelon","bellb"], "R":"bella"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay"}
+                ],
+                "ng": [
+                    { "L": ["gold","silver","bar", "bellb", "replay"], "C": ["bellb","cherrya"], "R":"bella", "note": "目押し成功1"},
+                    
+                    { "L": ["gold","silver","bar","replay"],"C": ["gold","bar","silver","cherryb"], "R": "replay", "note": "目押し失敗早い1" },
+                    
+                    { "L": ["bellb","replay"], "C": "bella", "R":"bella", "note": "目押し失敗遅い&全対応"}
+                ]
+            }
+        },
+        "リーチ3-R": {
+            "odds": 3,
+            "simplename": "3枚",
+            "push": {"L": 1, "C": null, "R": null},
+            "pos": null,
+            "stop": 
+                { "L": [3,4,9,10,11,15,16,17,2], "C": null, "R": null },
+            "sup": { "L": null, "C": [2,3,4,6,7,8,12,15,16], "R": null },
+            "sym": {
+                "ok": [
+                    { "L": "gold", "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"]},
+                    { "L": ["bar","silver"], "C": ["watermelon","bellb"], "R":"bella"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay"}
+                ],
+                "ng": [
+                    { "L": ["gold","silver","bar", "bellb", "replay"], "C": ["bellb","cherrya"], "R":"bella", "note": "目押し成功1"},
+                    
+                    { "L": ["gold","silver","bar","replay"],"C": ["gold","bar","silver","cherryb"], "R": "replay", "note": "目押し失敗早い1" },
+                    
+                    { "L": ["bellb","replay"], "C": "bella", "R":"bella", "note": "目押し失敗遅い&全対応"}
+                ]
+            }
+        },
+        "単チェ": {
+            "odds": {"ok": 1, "ng": 0},
+            "simplename": "単チェ",
+            "push": null,
+            "pos": null,
+            "stop": 
+                { "L": [6,19,1,7,12,14], "C": null, "R": null },
+            "sup": {"L": [6,19], "C": null, "R": null},
+            "sym": {
+                "ok": [
+                    { "L": "replay", "C": "bella", "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "watermelon", "C": "replay", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng": {
+                
                 }
             }
-            if (!foundOverlap) {
-                System.out.println("No overlaps found between different SimpleNames.");
+        },
+        "スイカ": {
+            "odds": {"ok":10, "ng":0},
+            "simplename": "スイカ",
+            "push": null,
+            "pos": null,
+            "stop": 
+                { "L": [1,3,8,9,10,13,15,16,17], "C": null, "R": null }
+            ,
+            "sup":[
+                { "L": null, "C": [12,17], "R": null }
+            ],
+            "sym": {
+                "ok":[
+                    {"L": "bella", "C": "watermelon", "R":"watermelon", "note": "3, 下段"},
+                    {"L": "silver", "C":["gold", "bar"], "R": "bella", "note": "9, 17 中段"},
+                    {"L": "watermelon", "C": "cherrya", "R": "replay", "note":"1, 8, 13, 16 上段"},
+                    {"L": "gold", "C":"watermelon" , "R": "watermelon", "note": "15, 下段"}
+                ],
+                "ng":[
+
+                ]
             }
+        },
+        "同時スイカ": {
+            "odds": {"ok":10,"ng":0},
+            "simplename": "スイカ",
+            "push": null,
+            "pos": null,
+            "stop": 
+                { "L": [1,3,8,9,10,13,15,16,17], "C": null, "R": null }
+            ,
+            "sup":
+                { "L": [3,10,16], "C": [12,17], "R": null }
+            ,
+            "sym": {
+                "ok":[
+                    {"L": "watermelon", "C":["gold", "bar"], "R":"watermelon" , "note":"1, 8, 16, 右下がり"},
+                    {"L": "watermelon", "C": ["gold", "bar"], "R":"replay", "note": "1, 下段"},
+                    {"L": "bella", "C": "watermelon", "R":"watermelon", "note": "3, 下段"},
+                    {"L": "silver", "C":["gold", "bar"], "R": "bella", "note": "9, 17 中段"},
+                    {"L": "watermelon", "C": "cherrya", "R": "replay", "note":"8, 16 上段"},
+                    {"L": "gold", "C":"watermelon" , "R": "watermelon", "note": "15, 下段"}
+                ],
+                "ng":[
 
-            // Output unused combinations
-            System.out.println("\n=== Unused Symbol Combinations ===");
-            if (allL.isEmpty() || allC.isEmpty() || allR.isEmpty()) {
-                System.out.println("Cannot calculate unused combinations: 'allsymbol' is incomplete.");
-            } else {
-                long totalPossible = (long) allL.size() * allC.size() * allR.size();
-                int unusedCount = 0;
-                for (String l : allL) {
-                    for (String c : allC) {
-                        for (String r : allR) {
-                            List<String> combo = Arrays.asList(l, c, r);
-                            if (!usedCombinations.contains(combo.toString())) {
-                                unusedCount++;
-                                System.out.println("  " + combo);
-                            }
-                        }
-                    }
-                }
-                System.out.println("Total unused: " + unusedCount + " (out of " + totalPossible + " possible)");
+                ]
             }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // Helper to flatten Object (String, List<String>, List<List<String>>) into List<String>
-    private static List<String> flatten(Object obj) {
-        List<String> result = new ArrayList<>();
-        if (obj == null) return result;
-
-        if (obj instanceof String) {
-            result.add((String) obj);
-        } else if (obj instanceof List) {
-            List<?> list = (List<?>) obj;
-            for (Object item : list) {
-                result.addAll(flatten(item));
+        },
+        "-G-": {
+            "odds":  { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [13,14,15,16,17], "R": null },
+            "stop": { "L": null, "C": 17, "R": null },
+            "sup":{"L": [2,3,4,8,9,10,13,14,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["cherryb","gold","bella"], "C": "gold", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng":[
+                    { "L": "gold", "C": "bella", "R": ["bar","gold","cherryb"] },
+                    { "L": "bar", "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
+                    { "L": "bella", "C": "bella", "R":"replay"},
+                    { "L": "replay", "C": "replay", "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "watermelon", "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "silver", "C": ["cherrya","blank"], "R": "replay"},
+                    { "L": "bellb", "C": ["gold","bar","silver","cherryb"], "R": "bella"}
+                ]
             }
-        }
-        return result;
-    }
+        },
+        "-G-チェリー": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3]},
+            "pos": { "L": null, "C": [13,14,15,16,17], "R": null },
+            "stop": 
+                { "L": null, "C": 17, "R": null },
+            "sup": { "L": [5,7,8,13,18,20], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "gold", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng":[
+                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "cherrya", "C": "bella", "R": "watermelon"},
+                    { "L": "bella", "C": "replay", "R":"watermelon"},
+                    { "L": "replay", "C": "replay", "R": "replay"},
+                    { "L": "watermelon", "C": "bella", "R": "bella" }
 
-    // --- Simple JSON Parser ---
-    static class SimpleJsonParser {
-        private String json;
-        private int index;
-        private int length;
-
-        public Object parse(String json) {
-            this.json = json;
-            this.length = json.length();
-            this.index = 0;
-            skipWhitespace();
-            return parseValue();
-        }
-
-        private Object parseValue() {
-            if (index >= length) return null;
-            char c = json.charAt(index);
-            if (c == '{') return parseObject();
-            if (c == '[') return parseArray();
-            if (c == '"') return parseString();
-            if (c == 't') return parseTrue();
-            if (c == 'f') return parseFalse();
-            if (c == 'n') return parseNull();
-            if (Character.isDigit(c) || c == '-') return parseNumber();
-            throw new RuntimeException("Unexpected char: " + c + " at index " + index);
-        }
-
-        private Map<String, Object> parseObject() {
-            Map<String, Object> map = new LinkedHashMap<>();
-            consume('{');
-            skipWhitespace();
-            if (peek() == '}') {
-                consume('}');
-                return map;
+                ]
             }
-            while (true) {
-                String key = parseString();
-                skipWhitespace();
-                consume(':');
-                skipWhitespace();
-                Object value = parseValue();
-                map.put(key, value);
-                skipWhitespace();
-                if (peek() == '}') {
-                    consume('}');
-                    break;
-                }
-                consume(',');
-                skipWhitespace();
+        },
+        "-G-3": {
+            "odds": { "ok": 15, "ng": 3},
+            "simplename": {"ok": "15枚", "ng": "3枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3]},
+            "pos": { "L": null, "C": [13,14,15,16,17], "R": null },
+            "stop": 
+                { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "gold", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng":[
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ]
             }
-            return map;
-        }
-
-        private List<Object> parseArray() {
-            List<Object> list = new ArrayList<>();
-            consume('[');
-            skipWhitespace();
-            if (peek() == ']') {
-                consume(']');
-                return list;
+            
+        },
+        "-S-": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
+            "stop": { "L": null, "C": [2,7], "R": null },
+            "sup": { "L": null, "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "silver", "R": ["bar","gold","cherryb"] },
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "cheryb", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng":[
+                    { "L": "gold", "C": "bella", "R": ["bar","gold","cherryb"] },
+                    { "L": "bar", "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
+                    { "L": "bella", "C": "bella", "R":"replay"},
+                    { "L": "replay", "C": "replay", "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "watermelon", "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "silver", "C": ["cherrya","blank"], "R": "replay"},
+                    { "L": "bellb", "C": ["gold","bar","silver","cherryb"], "R": "bella"}
+                ]
             }
-            while (true) {
-                Object value = parseValue();
-                list.add(value);
-                skipWhitespace();
-                if (peek() == ']') {
-                    consume(']');
-                    break;
-                }
-                consume(',');
-                skipWhitespace();
+        },
+        "-S-チェリー": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
+            "stop": { "L": null, "C": [2,7], "R": null },
+            "sup": { "L": [5,7,8,13,18,20], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "silver", "R": ["bar","gold","cherryb"] },
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "cheryb", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng":[
+                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "cherrya", "C": "bella", "R": "watermelon"},
+                    { "L": "bella", "C": "replay", "R":"watermelon"},
+                    { "L": "replay", "C": "replay", "R": "replay"},
+                    { "L": "watermelon", "C": "bella", "R": "bella" }
+                ]
             }
-            return list;
-        }
-
-        private String parseString() {
-            consume('"');
-            StringBuilder sb = new StringBuilder();
-            while (index < length) {
-                char c = json.charAt(index++);
-                if (c == '"') {
-                    return sb.toString();
-                }
-                if (c == '\\') {
-                    char escaped = json.charAt(index++);
-                    if (escaped == 'u') {
-                        String hex = json.substring(index, index + 4);
-                        sb.append((char) Integer.parseInt(hex, 16));
-                        index += 4;
-                    } else if (escaped == '"') sb.append('"');
-                    else if (escaped == '\\') sb.append('\\');
-                    else if (escaped == '/') sb.append('/');
-                    else if (escaped == 'b') sb.append('\b');
-                    else if (escaped == 'f') sb.append('\f');
-                    else if (escaped == 'n') sb.append('\n');
-                    else if (escaped == 'r') sb.append('\r');
-                    else if (escaped == 't') sb.append('\t');
-                    else sb.append(escaped); // Fallback
-                } else {
-                    sb.append(c);
-                }
+        },
+        "-S-3": {
+            "odds": { "ok": 15, "ng": 3},
+            "simplename": {"ok": "15枚", "ng": "3枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
+            "stop": { "L": null, "C": [2,7], "R": null},
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "silver", "R": ["bar","gold","cherryb"] },
+                    { "L": ["cherryb","gold","bella","cherrya"], "C": "cheryb", "R": ["bar","gold","cherryb"] }
+                ],
+                "ng":[
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ]
             }
-            throw new RuntimeException("Unterminated string");
-        }
-
-        private Boolean parseTrue() {
-            consume("true");
-            return true;
-        }
-
-        private Boolean parseFalse() {
-            consume("false");
-            return false;
-        }
-
-        private Object parseNull() {
-            consume("null");
-            return null;
-        }
-
-        private Number parseNumber() {
-            int start = index;
-            if (json.charAt(index) == '-') index++;
-            while (index < length && Character.isDigit(json.charAt(index))) index++;
-            if (index < length && json.charAt(index) == '.') {
-                index++;
-                while (index < length && Character.isDigit(json.charAt(index))) index++;
+        },
+        "-B-": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
+            "stop": { "L": [2,5,9,13,16,19], "C": 12, "R": null },
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["bar", "cherrya","watermelon"], "C": "bar", "R": "bella" }
+                ],
+                "ng": [
+                    { "L": "gold", "C": "bella", "R": ["bar","gold","cherryb"] },
+                    { "L": "bar", "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
+                    { "L": "bella", "C": "bella", "R":"replay"},
+                    { "L": "replay", "C": "replay", "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "watermelon", "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "silver", "C": ["cherrya","blank"], "R": "replay"},
+                    { "L": "bellb", "C": ["gold","bar","silver","cherryb"], "R": "bella"}
+                ]
             }
-            String numStr = json.substring(start, index);
-            if (numStr.contains(".")) return Double.parseDouble(numStr);
-            return Long.parseLong(numStr);
-        }
-
-        private void consume(char expected) {
-            if (index >= length || json.charAt(index) != expected) {
-                throw new RuntimeException("Expected " + expected + " at " + index);
+        },
+        "-B-チェリー": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
+            "stop": { "L": [2,5,9,13,16,19], "C": 12, "R": null },
+            "sup":
+                { "L": [5,7,8,13,18,20], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["bar", "cherrya","watermelon"], "C": "bar", "R": "bella" }
+                ],
+                "ng":[
+                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "cherrya", "C": "bella", "R": "watermelon"},
+                    { "L": "bella", "C": "replay", "R":"watermelon"},
+                    { "L": "replay", "C": "replay", "R": "replay"},
+                    { "L": "watermelon", "C": "bella", "R": "bella" }
+                ]
             }
-            index++;
-        }
-
-        private void consume(String expected) {
-            if (json.startsWith(expected, index)) {
-                index += expected.length();
-            } else {
-                throw new RuntimeException("Expected " + expected + " at " + index);
+        },
+        "-B-3": {
+            "odds": { "ok": 15, "ng": 3},
+            "simplename": {"ok": "15枚", "ng": "3枚"},
+            "push": { "L": [2,3], "C": 1, "R": [2,3] },
+            "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
+            "stop": { "L": [2,5,9,13,16,19], "C": 12, "R": null },
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["bar", "cherrya","watermelon"], "C": "bar", "R": "bella" }
+                ],
+                "ng":[
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ]
             }
-        }
-
-        private void skipWhitespace() {
-            while (index < length && Character.isWhitespace(json.charAt(index))) {
-                index++;
+        },
+        "--G": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
+            "stop": { "L": null, "C": null, "R": 17 },
+            "sup": { "L": null, "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["replay","cherryb"], "C": "replay", "R": "gold" }
+                ],
+                "ng": [
+                    { "L": "gold", "C": "bella", "R": ["bar","gold","cherryb"] },
+                    { "L": "bar", "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
+                    { "L": "bella", "C": "bella", "R":"replay"},
+                    { "L": "replay", "C": "replay", "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "watermelon", "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "silver", "C": ["cherrya","blank"], "R": "replay"},
+                    { "L": "bellb", "C": ["gold","bar","silver","cherryb"], "R": "bella"}
+                ]
             }
-        }
+        },
+        "--Gチェリー": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
+            "stop": { "L": null, "C": null, "R": 17 },
+            "sup": { "L": [5,7,8,13,18,20], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["replay","cherryb"], "C": "replay", "R": "gold" }
+                ],
+                "ng":[
+                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "cherrya", "C": "bella", "R": "watermelon"},
+                    { "L": "bella", "C": "replay", "R":"watermelon"},
+                    { "L": "replay", "C": "replay", "R": "replay"},
+                    { "L": "watermelon", "C": "bella", "R": "bella" }
+                ]
+            }
+        },
+        "--G3": {
+            "odds": { "ok": 15, "ng": 3},
+            "simplename": {"ok": "15枚", "ng": "3枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
+            "stop": { "L": null, "C": null, "R": 17 },
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok": [
+                    { "L": ["replay","cherryb"], "C": "replay", "R": "gold" }
+                ],
+                "ng":[
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ]
+            }
+        },
+        "--S": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
+            "stop": { "L": null, "C": null, "R": [2,7] },
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok":[
+                    { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"], "R": "cherryb" }
+                ],
+                "ng":[
+                    { "L": "gold", "C": "bella", "R": ["bar","gold","cherryb"] },
+                    { "L": "bar", "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
+                    { "L": "bella", "C": "bella", "R":"replay"},
+                    { "L": "replay", "C": "replay", "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "watermelon", "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "silver", "C": ["cherrya","blank"], "R": "replay"},
+                    { "L": "bellb", "C": ["gold","bar","silver","cherryb"], "R": "bella"}
+                ]
+            }
+        },
+        "--Sチェリー": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
+            "stop": 
+                { "L": null, "C": null, "R": [2,7] }
+            ,
+            "sup": 
+                { "L": [5,7,8,13,18,20], "C": null, "R": null }
+            ,
+            "sym": {
+                "ok": [
+                    { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"], "R": "cherryb" }
+                ],
+                "ng":[
+                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "cherrya", "C": "bella", "R": "watermelon"},
+                    { "L": "bella", "C": "replay", "R":"watermelon"},
+                    { "L": "replay", "C": "replay", "R": "replay"},
+                    { "L": "watermelon", "C": "bella", "R": "bella" }
+                ]
+            }
+        },
+        "--S3": {
+            "odds": { "ok": 15, "ng": 3},
+            "simplename": {"ok": "15枚", "ng": "3枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
+            "stop": { "L": null, "C": null, "R": [2,7] },
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok":[
+                    { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"], "R": "cherryb" }
+                ],
+                "ng":[
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ]
+            }
+        },
+        "--B": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
+            "stop": { "L": null, "C": null, "R": 12 },
+            "sym": {
+                "ok":[
+                    {"L": ["cherryb", "replay"], "C": "replay", "R": "bar"}
+                ],
+                "ng":[
+                    { "L": "gold", "C": "bella", "R": ["bar","gold","cherryb"] },
+                    { "L": "bar", "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
+                    { "L": "bella", "C": "bella", "R":"replay"},
+                    { "L": "replay", "C": "replay", "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "watermelon", "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
+                    { "L": "silver", "C": ["cherrya","blank"], "R": "replay"},
+                    { "L": "bellb", "C": ["gold","bar","silver","cherryb"], "R": "bella"}
+                ]
+            }
+        },
+        "--Bチェリー": {
+            "odds": { "ok": 15, "ng": 1},
+            "simplename": {"ok": "15枚", "ng": "1枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
+            "stop": 
+                { "L": null, "C": null, "R": 12}
+            ,
+            "sup": 
+                { "L": [5,7,8,13,18,20], "C": null, "R": null }
+            ,
+            "sym": {
+                "ok": [
+                    {"L": ["cherryb", "replay"], "C": "replay", "R": "bar"}
+                ],
+                "ng":[
+                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    { "L": "cherrya", "C": "bella", "R": "watermelon"},
+                    { "L": "bella", "C": "replay", "R":"watermelon"},
+                    { "L": "replay", "C": "replay", "R": "replay"},
+                    { "L": "watermelon", "C": "bella", "R": "bella" }
+                ]
+            }
+        },
+        "--B3": {
+            "odds": {"ok":15, "ng":3 },
+            "simplename": {"ok": "15枚", "ng": "3枚"},
+            "push": { "L": [2,3], "C": [2,3], "R": 1 },
+            "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
+            "stop": 
+                { "L": null, "C": null, "R": 12 }
+            ,
+            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok":[
+                    { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"], "R": "cherryb" }
+                ],
+                "ng":[
+                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
+                    { "L": "gold", "C": ["watermelon","bellb"], "R":"bella", "note": "右下がり3枚"},
+                    { "L": ["bella","watermelon"], "C": ["watermelon","bellb"], "R": "replay", "note": "中段3枚"},
+                    { "L": ["bellb","replay"], "C": "bella", "R": "bella", "note": "下段3枚"}
+                ]
+            }
+        },
+        "ハズレ": {
+            "odds": {"ok":0, "ng":0},
+            "simplename": "ハズレ",
+            "push": null,
+            "pos": null,
+            "stop": 
+                { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null},
+            "sup": { "L": null, "C": null, "R": null },
+            "sym": {
+                "ok":[
+                    
+                ],
+                "ng":[
 
-        private char peek() {
-            if (index >= length) return 0;
-            return json.charAt(index);
+                ]
+            }
+        },
+        "チャンス": {
+            "odds": {"ok":0, "ng":0 },
+            "simplename": "ハズレ",
+            "push": { "L": 1, "C": null, "R": null },
+            "pos": null,
+            "stop": 
+                { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null }
+            ,
+            "sup":
+                { "L": null, "C": null, "R": 17 }
+            ,
+            "sym": {
+                "ok":[
+                    {"L": "bar", "C": "replay", "R":"bella"},
+                    {"L": "replay", "C": "replay", "R": "bella"},
+                    {"L": "watermelon", "C": "replay", "R": "bella"},
+                    {"L": "watermelon", "C":["silver","cherryb"], "R":"replay"},
+                    {"L": "silver", "C":["gold","bar","silver","cherryb"], "R":["bar","gold","cherryb"]},
+                    {"L": "replay", "C": "bella", "R": ["bar","gold","cherryb"]},
+                    {"L": "gold", "C": ["cherrya", "blank"], "R":   ["silver","blank","bellb","cherrya"]},
+                    {"L": "watermelon", "C": "bella", "R": "watermelon"}
+                ],
+                "ng":[
+                   
+                ]
+            }
+            
         }
     }
 }
