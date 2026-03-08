@@ -1,0 +1,373 @@
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class YakuCheck {
+
+    public static void main(String[] args) {
+        try {
+            String filePath = (args.length > 0) ? args[0] : "./src/seirituyaku.json";
+            String jsonContent = new String(Files.readAllBytes(Paths.get(filePath)), StandardCharsets.UTF_8);
+            Object parsed = new SimpleJsonParser().parse(jsonContent);
+
+            if (!(parsed instanceof Map)) {
+                System.err.println("Root JSON is not an object.");
+                return;
+            }
+
+            Map<String, Object> root = (Map<String, Object>) parsed;
+            Map<String, Object> yakuMap = (Map<String, Object>) root.get("yaku");
+
+            // --- Handle allsymbols ---
+            List<String> allL = new ArrayList<>();
+            List<String> allC = new ArrayList<>();
+            List<String> allR = new ArrayList<>();
+            Object allSymObj = root.get("allsymbol");
+            if (allSymObj instanceof List) {
+                List<?> allSymList = (List<?>) allSymObj;
+                if (!allSymList.isEmpty() && allSymList.get(0) instanceof Map) {
+                    Map<String, Object> firstAllSym = (Map<String, Object>) allSymList.get(0);
+                    allL = flatten(firstAllSym.get("L"));
+                    allC = flatten(firstAllSym.get("C"));
+                    allR = flatten(firstAllSym.get("R"));
+                }
+            }
+
+            if (yakuMap == null) {
+                System.err.println("'yaku' field not found.");
+                return;
+            }
+
+            // Map to store: SymbolCombination string -> Set of simple names
+            Map<String, Set<String>> combinationToSimpleNames = new LinkedHashMap<>();
+            // Map to store: SymbolCombination string -> List of Yaku names (to display which yakus are involved)
+            Map<String, List<String>> combinationToYakus = new LinkedHashMap<>();
+            // Set to keep track of ALL used combinations (for unused check)
+            Set<String> usedCombinations = new HashSet<>();
+            // Map to store: Yaku name -> (Category -> List of SymbolCombinations)
+            Map<String, Map<String, List<List<String>>>> yakuToCategorizedCombinations = new LinkedHashMap<>();
+
+            for (Map.Entry<String, Object> entry : yakuMap.entrySet()) {
+                String yakuName = entry.getKey();
+                Object yakuDataObj = entry.getValue();
+
+                if (!(yakuDataObj instanceof Map)) continue;
+                Map<String, Object> yakuData = (Map<String, Object>) yakuDataObj;
+
+                Object simplenameObj = yakuData.get("simplename");
+                Object symObj = yakuData.get("sym");
+                
+                // Key: "ok" or "ng" or "default", Value: List of Definitions
+                Map<String, List<Map<String, Object>>> categorizedSyms = new LinkedHashMap<>();
+
+                if (symObj instanceof List) {
+                    List<Map<String, Object>> defs = new ArrayList<>();
+                    for (Object o : (List<?>) symObj) {
+                        if (o instanceof Map) defs.add((Map<String, Object>) o);
+                    }
+                    categorizedSyms.put("default", defs);
+                } else if (symObj instanceof Map) {
+                    Map<String, Object> symMap = (Map<String, Object>) symObj;
+                    if (symMap.containsKey("ok")) {
+                        List<Map<String, Object>> okDefs = new ArrayList<>();
+                        Object okObj = symMap.get("ok");
+                        if (okObj instanceof List) {
+                            for (Object o : (List<?>) okObj) if (o instanceof Map) okDefs.add((Map<String, Object>) o);
+                        }
+                        categorizedSyms.put("ok", okDefs);
+                    }
+                    if (symMap.containsKey("ng")) {
+                        List<Map<String, Object>> ngDefs = new ArrayList<>();
+                        Object ngObj = symMap.get("ng");
+                        if (ngObj instanceof List) {
+                            for (Object o : (List<?>) ngObj) if (o instanceof Map) ngDefs.add((Map<String, Object>) o);
+                        }
+                        categorizedSyms.put("ng", ngDefs);
+                    }
+                }
+
+                Map<String, List<List<String>>> currentYakuCategories = new LinkedHashMap<>();
+
+                for (Map.Entry<String, List<Map<String, Object>>> catEntry : categorizedSyms.entrySet()) {
+                    String category = catEntry.getKey();
+                    List<Map<String, Object>> defs = catEntry.getValue();
+                    List<List<String>> categoryCombinations = new ArrayList<>();
+
+                    // Determine the specific simplename for this category
+                    String specificSimpleName = "Unknown";
+                    if (simplenameObj instanceof String) {
+                        specificSimpleName = (String) simplenameObj;
+                    } else if (simplenameObj instanceof Map) {
+                        Map<?, ?> sMap = (Map<?, ?>) simplenameObj;
+                        Object val = sMap.get(category);
+                        if (val == null && category.equals("default")) val = sMap.get("ok"); // Fallback
+                        if (val != null) specificSimpleName = val.toString();
+                    } else if (simplenameObj == null) {
+                        specificSimpleName = yakuName; // Fallback to yaku name if missing
+                    }
+
+                    for (Map<String, Object> def : defs) {
+                        List<String> lOptions = flatten(def.get("L"));
+                        List<String> cOptions = flatten(def.get("C"));
+                        List<String> rOptions = flatten(def.get("R"));
+
+                        for (String l : lOptions) {
+                            for (String c : cOptions) {
+                                for (String r : rOptions) {
+                                    List<String> combo = Arrays.asList(l, c, r);
+                                    categoryCombinations.add(combo);
+                                    
+                                    String comboKey = combo.toString();
+                                    usedCombinations.add(comboKey);
+                                    combinationToSimpleNames.computeIfAbsent(comboKey, k -> new LinkedHashSet<>()).add(specificSimpleName);
+                                    combinationToYakus.computeIfAbsent(comboKey, k -> new ArrayList<>()).add(yakuName + " (" + specificSimpleName + ")");
+                                }
+                            }
+                        }
+                    }
+                    currentYakuCategories.put(category, categoryCombinations);
+                }
+                yakuToCategorizedCombinations.put(yakuName, currentYakuCategories);
+            }
+
+            // Output all expanded syms for each yaku
+            System.out.println("=== Expanded Yaku Symbols ===");
+            for (Map.Entry<String, Map<String, List<List<String>>>> yakuEntry : yakuToCategorizedCombinations.entrySet()) {
+                System.out.println("Yaku: " + yakuEntry.getKey());
+                Map<String, List<List<String>>> categories = yakuEntry.getValue();
+                if (categories.isEmpty()) {
+                    System.out.println("  (None)");
+                } else {
+                    for (Map.Entry<String, List<List<String>>> catEntry : categories.entrySet()) {
+                        System.out.println("  Category: " + catEntry.getKey());
+                        for (List<String> combo : catEntry.getValue()) {
+                            System.out.println("    " + combo);
+                        }
+                    }
+                }
+                System.out.println();
+            }
+
+            // Output duplicates based on unique simple names
+            System.out.println("=== Overlapping Symbols (Different SimpleNames) ===");
+            boolean foundOverlap = false;
+            for (Map.Entry<String, Set<String>> entry : combinationToSimpleNames.entrySet()) {
+                Set<String> simpleNames = entry.getValue();
+                
+                if (simpleNames.size() > 1) {
+                    foundOverlap = true;
+                    System.out.println("Symbol: " + entry.getKey());
+                    System.out.println("  SimpleNames: " + simpleNames);
+                    List<String> yakus = combinationToYakus.get(entry.getKey());
+                    System.out.println("  Involved Yakus: " + new LinkedHashSet<>(yakus));
+                }
+            }
+            if (!foundOverlap) {
+                System.out.println("No overlaps found between different SimpleNames.");
+            }
+
+            // Output unused combinations
+            System.out.println("\n=== Unused Symbol Combinations ===");
+            if (allL.isEmpty() || allC.isEmpty() || allR.isEmpty()) {
+                System.out.println("Cannot calculate unused combinations: 'allsymbol' is incomplete.");
+            } else {
+                long totalPossible = (long) allL.size() * allC.size() * allR.size();
+                int unusedCount = 0;
+                for (String l : allL) {
+                    for (String c : allC) {
+                        for (String r : allR) {
+                            List<String> combo = Arrays.asList(l, c, r);
+                            if (!usedCombinations.contains(combo.toString())) {
+                                unusedCount++;
+                                System.out.println("  " + combo);
+                            }
+                        }
+                    }
+                }
+                System.out.println("Total unused: " + unusedCount + " (out of " + totalPossible + " possible)");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Helper to flatten Object (String, List<String>, List<List<String>>) into List<String>
+    private static List<String> flatten(Object obj) {
+        List<String> result = new ArrayList<>();
+        if (obj == null) return result;
+
+        if (obj instanceof String) {
+            result.add((String) obj);
+        } else if (obj instanceof List) {
+            List<?> list = (List<?>) obj;
+            for (Object item : list) {
+                result.addAll(flatten(item));
+            }
+        }
+        return result;
+    }
+
+    // --- Simple JSON Parser ---
+    static class SimpleJsonParser {
+        private String json;
+        private int index;
+        private int length;
+
+        public Object parse(String json) {
+            this.json = json;
+            this.length = json.length();
+            this.index = 0;
+            skipWhitespace();
+            return parseValue();
+        }
+
+        private Object parseValue() {
+            if (index >= length) return null;
+            char c = json.charAt(index);
+            if (c == '{') return parseObject();
+            if (c == '[') return parseArray();
+            if (c == '"') return parseString();
+            if (c == 't') return parseTrue();
+            if (c == 'f') return parseFalse();
+            if (c == 'n') return parseNull();
+            if (Character.isDigit(c) || c == '-') return parseNumber();
+            throw new RuntimeException("Unexpected char: " + c + " at index " + index);
+        }
+
+        private Map<String, Object> parseObject() {
+            Map<String, Object> map = new LinkedHashMap<>();
+            consume('{');
+            skipWhitespace();
+            if (peek() == '}') {
+                consume('}');
+                return map;
+            }
+            while (true) {
+                String key = parseString();
+                skipWhitespace();
+                consume(':');
+                skipWhitespace();
+                Object value = parseValue();
+                map.put(key, value);
+                skipWhitespace();
+                if (peek() == '}') {
+                    consume('}');
+                    break;
+                }
+                consume(',');
+                skipWhitespace();
+            }
+            return map;
+        }
+
+        private List<Object> parseArray() {
+            List<Object> list = new ArrayList<>();
+            consume('[');
+            skipWhitespace();
+            if (peek() == ']') {
+                consume(']');
+                return list;
+            }
+            while (true) {
+                Object value = parseValue();
+                list.add(value);
+                skipWhitespace();
+                if (peek() == ']') {
+                    consume(']');
+                    break;
+                }
+                consume(',');
+                skipWhitespace();
+            }
+            return list;
+        }
+
+        private String parseString() {
+            consume('"');
+            StringBuilder sb = new StringBuilder();
+            while (index < length) {
+                char c = json.charAt(index++);
+                if (c == '"') {
+                    return sb.toString();
+                }
+                if (c == '\\') {
+                    char escaped = json.charAt(index++);
+                    if (escaped == 'u') {
+                        String hex = json.substring(index, index + 4);
+                        sb.append((char) Integer.parseInt(hex, 16));
+                        index += 4;
+                    } else if (escaped == '"') sb.append('"');
+                    else if (escaped == '\\') sb.append('\\');
+                    else if (escaped == '/') sb.append('/');
+                    else if (escaped == 'b') sb.append('\b');
+                    else if (escaped == 'f') sb.append('\f');
+                    else if (escaped == 'n') sb.append('\n');
+                    else if (escaped == 'r') sb.append('\r');
+                    else if (escaped == 't') sb.append('\t');
+                    else sb.append(escaped); // Fallback
+                } else {
+                    sb.append(c);
+                }
+            }
+            throw new RuntimeException("Unterminated string");
+        }
+
+        private Boolean parseTrue() {
+            consume("true");
+            return true;
+        }
+
+        private Boolean parseFalse() {
+            consume("false");
+            return false;
+        }
+
+        private Object parseNull() {
+            consume("null");
+            return null;
+        }
+
+        private Number parseNumber() {
+            int start = index;
+            if (json.charAt(index) == '-') index++;
+            while (index < length && Character.isDigit(json.charAt(index))) index++;
+            if (index < length && json.charAt(index) == '.') {
+                index++;
+                while (index < length && Character.isDigit(json.charAt(index))) index++;
+            }
+            String numStr = json.substring(start, index);
+            if (numStr.contains(".")) return Double.parseDouble(numStr);
+            return Long.parseLong(numStr);
+        }
+
+        private void consume(char expected) {
+            if (index >= length || json.charAt(index) != expected) {
+                throw new RuntimeException("Expected " + expected + " at " + index);
+            }
+            index++;
+        }
+
+        private void consume(String expected) {
+            if (json.startsWith(expected, index)) {
+                index += expected.length();
+            } else {
+                throw new RuntimeException("Expected " + expected + " at " + index);
+            }
+        }
+
+        private void skipWhitespace() {
+            while (index < length && Character.isWhitespace(json.charAt(index))) {
+                index++;
+            }
+        }
+
+        private char peek() {
+            if (index >= length) return 0;
+            return json.charAt(index);
+        }
+    }
+}
