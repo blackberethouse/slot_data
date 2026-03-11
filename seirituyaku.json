@@ -1,11 +1,11 @@
 {
-    "allsymbol":[
+    "allsymbol":
         {
             "L":["gold","bar","silver","bella","bellb","cherrya","cherryb","watermelon","replay"],
             "C":["gold","bar","silver","cherryb","bellb","watermelon","cherrya","blank","bella","replay"],
             "R":["gold","bar","cherryb","silver","cherrya","bellb","blank","bella","watermelon","replay"]
         }    
-    ],
+    ,
     "siyou":{
         "役名":{
             "odds": "配当",
