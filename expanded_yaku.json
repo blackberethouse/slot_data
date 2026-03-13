@@ -1,0 +1,9113 @@
+{
+  "リプ": {
+    "ok": [
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "replay"
+      }
+    ]
+  },
+  "リーチリプB1": {
+    "ok": [
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "silver"
+      }
+    ],
+    "ng": [
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "replay"
+      }
+    ]
+  },
+  "リーチリプB2": {
+    "ok": [
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "watermelon"
+      }
+    ],
+    "ng": [
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "replay"
+      }
+    ]
+  },
+  "リーチリプB3": {
+    "ok": [
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "replay"
+      }
+    ]
+  },
+  "リーチリプR1": {
+    "ok": [
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "replay"
+      }
+    ],
+    "ng": [
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "replay"
+      }
+    ]
+  },
+  "リーチリプR2": {
+    "ok": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "replay"
+      }
+    ],
+    "ng": [
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "replay"
+      }
+    ]
+  },
+  "3枚": {
+    "ok": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "リーチ3-B": {
+    "ok": [
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "リーチ3-R": {
+    "ok": [
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "単チェ": {
+    "ok": [
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "cherryb"
+      }
+    ]
+  },
+  "スイカ": {
+    "ok": [
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "watermelon"
+      }
+    ]
+  },
+  "同時スイカ": {
+    "ok": [
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "watermelon"
+      }
+    ]
+  },
+  "-G-": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
+      }
+    ]
+  },
+  "-G-チェリー": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "-G-3": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "-S-": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
+      }
+    ]
+  },
+  "-S-チェリー": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "-S-3": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "cheryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "cheryb",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "-B-": {
+    "ok": [
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bella"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
+      }
+    ]
+  },
+  "-B-チェリー": {
+    "ok": [
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bella"
+      }
+    ],
+    "ng": [
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "-B-3": {
+    "ok": [
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bella"
+      }
+    ],
+    "ng": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "--G": {
+    "ok": [
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "gold"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
+      }
+    ]
+  },
+  "--Gチェリー": {
+    "ok": [
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "gold"
+      }
+    ],
+    "ng": [
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "--G3": {
+    "ok": [
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "gold"
+      }
+    ],
+    "ng": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "--S": {
+    "ok": [
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
+      }
+    ]
+  },
+  "--Sチェリー": {
+    "ok": [
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "--S3": {
+    "ok": [
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "--B": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bar"
+      }
+    ],
+    "ng": [
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
+      }
+    ]
+  },
+  "--Bチェリー": {
+    "ok": [
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bar"
+      }
+    ],
+    "ng": [
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "--B3": {
+    "ok": [
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "cherryb"
+      }
+    ],
+    "ng": [
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bella"
+      }
+    ]
+  },
+  "チャンス": {
+    "ok": [
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "watermelon"
+      }
+    ]
+  },
+  "揃わない": {
+    "ok": [
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "bella"
+      }
+    ]
+  },
+  "完全ハズレ": {
+    "ok": [
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bar",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "gold"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "bar"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherrya",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "gold",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "bar",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "silver",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherryb",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "bellb",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "watermelon",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "gold"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "bar"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "bella"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "cherryb",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherrya",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "watermelon",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "replay"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "gold",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "bar",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "silver",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "cherryb",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "bellb",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "watermelon",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "cherrya",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "gold"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bar"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "bella"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "blank",
+        "R": "replay"
+      },
+      {
+        "L": "replay",
+        "C": "bella",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "cherryb"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      }
+    ]
+  }
+}
