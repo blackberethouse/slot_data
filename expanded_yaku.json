@@ -476,6 +476,86 @@
         "L": "bellb",
         "C": "bar",
         "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "silver",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "cherryb",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "gold",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "cherrya"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bar",
+        "R": "silver"
       }
     ],
     "ng": [
@@ -9080,26 +9160,6 @@
       {
         "L": "watermelon",
         "C": "gold",
-        "R": "silver"
-      },
-      {
-        "L": "watermelon",
-        "C": "gold",
-        "R": "cherrya"
-      },
-      {
-        "L": "watermelon",
-        "C": "gold",
-        "R": "bellb"
-      },
-      {
-        "L": "watermelon",
-        "C": "gold",
-        "R": "blank"
-      },
-      {
-        "L": "watermelon",
-        "C": "gold",
         "R": "bella"
       },
       {
@@ -9130,26 +9190,6 @@
       {
         "L": "watermelon",
         "C": "bar",
-        "R": "silver"
-      },
-      {
-        "L": "watermelon",
-        "C": "bar",
-        "R": "cherrya"
-      },
-      {
-        "L": "watermelon",
-        "C": "bar",
-        "R": "bellb"
-      },
-      {
-        "L": "watermelon",
-        "C": "bar",
-        "R": "blank"
-      },
-      {
-        "L": "watermelon",
-        "C": "bar",
         "R": "watermelon"
       },
       {
@@ -9175,26 +9215,6 @@
       {
         "L": "watermelon",
         "C": "silver",
-        "R": "silver"
-      },
-      {
-        "L": "watermelon",
-        "C": "silver",
-        "R": "cherrya"
-      },
-      {
-        "L": "watermelon",
-        "C": "silver",
-        "R": "bellb"
-      },
-      {
-        "L": "watermelon",
-        "C": "silver",
-        "R": "blank"
-      },
-      {
-        "L": "watermelon",
-        "C": "silver",
         "R": "bella"
       },
       {
@@ -9216,26 +9236,6 @@
         "L": "watermelon",
         "C": "cherryb",
         "R": "cherryb"
-      },
-      {
-        "L": "watermelon",
-        "C": "cherryb",
-        "R": "silver"
-      },
-      {
-        "L": "watermelon",
-        "C": "cherryb",
-        "R": "cherrya"
-      },
-      {
-        "L": "watermelon",
-        "C": "cherryb",
-        "R": "bellb"
-      },
-      {
-        "L": "watermelon",
-        "C": "cherryb",
-        "R": "blank"
       },
       {
         "L": "watermelon",
