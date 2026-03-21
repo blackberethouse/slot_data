@@ -375,7 +375,7 @@
             "push": { "L": [2,3],  "C": [1], "R": [2,3] },
             "pos": { "L": null, "C": [18,19,20,1,2,3,4,5,6,7], "R": null },
             "stop": { "L": null, "C": [2,7], "R": null },
-            "sup": { "L": null, "C": null, "R": null },
+            "sup": { "L": [2,3,4,8,9,10,13,14,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok": [
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["silver"], "R": ["bar","gold","cherryb"] },
@@ -433,7 +433,7 @@
             "push": { "L": [2,3],  "C": [1], "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
             "stop": { "L": [1,5,8,13,16,19],  "C": [12], "R": null },
-            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sup": { "L": [2,3,4,8,9,10,13,14,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok": [
                     { "L": ["cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
@@ -489,7 +489,7 @@
             "push": { "L": [2,3], "C": [2,3],  "R": [1] },
             "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
             "stop": { "L": null, "C": null,  "R": [17] },
-            "sup": { "L":[2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sup": { "L":[2,3,4,8,9,10,13,14,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok": [
                     { "L": ["replay","cherryb"],  "C": ["replay"],  "R": ["gold"] }
@@ -544,7 +544,7 @@
             "push": { "L": [2,3], "C": [2,3],  "R": [1] },
             "pos": {"L": null, "C": null, "R": [18,19,20,1,2,3,4,5,6,7]},
             "stop": { "L": null, "C": null, "R": [2,7] },
-            "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
+            "sup": { "L": [2,3,4,8,9,10,13,14,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok":[
                     { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["cherryb"] }
@@ -602,7 +602,7 @@
             "prob": {"6": 7115},
             "push": { "L": [2,3], "C": [2,3],  "R": [1] },
             "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
-            "stop": { "L": null, "C": null,  "R": [12] },
+            "stop": { "L": [2,3,4,8,9,10,13,14,15,16,17], "C": null,  "R": [12] },
             "sym": {
                 "ok":[
                     {"L": ["cherryb", "replay"],  "C": ["replay"],  "R": ["bar"]}
