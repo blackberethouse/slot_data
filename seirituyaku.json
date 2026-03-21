@@ -489,7 +489,7 @@
             "push": { "L": [2,3], "C": [2,3],  "R": [1] },
             "pos": { "L": null, "C": null, "R": [13,14,15,16,17] },
             "stop": { "L": null, "C": null,  "R": [17] },
-            "sup": { "L": null, "C": null, "R": null },
+            "sup": { "L":[2,3,4,9,10,11,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok": [
                     { "L": ["replay","cherryb"],  "C": ["replay"],  "R": ["gold"] }
