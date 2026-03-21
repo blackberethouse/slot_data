@@ -64,7 +64,8 @@
                     {  "L": ["silver"], "C": ["replay"],  "R": ["watermelon"], "note": "上段白7直撃"},
                     {  "L": ["silver"],"C":["blank", "cherrya"],"R":["cherrya","bellb","blank","silver"] ,"note":"右下がり白7直撃"},
                     {  "L": ["bella"], "C":["blank", "cherrya"],"R":["bar","gold","cherryb"], "note": "中段白7直撃"},
-                    { "L": ["replay","bellb"], "C":["silver","cherryb","gold","bar"],"R":["cherrya","bellb","blank","silver"], "note":"下段白7直撃、ハズレ回避"}
+                    { "L": ["replay","bellb"], "C":["silver","cherryb","gold","bar"],"R":["cherrya","bellb","blank","silver"], "note":"下段白7直撃、ハズレ回避"},
+                    { "L": ["watermelon"], "C":["silver","cherryb","gold","bar"], "R": ["cherrya","bellb","blank","silver"]}
                 ],
                 "ng": [
                     { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
