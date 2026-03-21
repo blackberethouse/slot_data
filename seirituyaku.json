@@ -26,28 +26,31 @@
     },
     "yaku": {
         "リプ": {
-            "odds": "r",
+            "odds": {"ok":"r", "ng":"r"},
             "simplename": "リプ",
             "prob": {"6": 8673},
-            "push": { "L": [2,3],  "C": [1], "R": [2,3] },
-            "pos": { "L": null, "C": [3,8,15,16], "R": null },
-            "stop": { "L": null, "C": [3,8,16], "R": null },
-            "sup" : { "L": [1,2,4,8,13,14,16], "C": [2,3,4,6,7,8,14,15,16], "R": null},
+            "push": { "L": [1],  "C": [2,3], "R": [2,3] },
+            "pos": { "L": null, "C": null, "R": null },
+            "stop": { "L": [1,2,4,8,13,14,16], "C": null, "R": null },
+            "sup" : { "L": null, "C": [2,3,4,6,7,8,14,16], "R": null},
             "sym" : {
                 "ok": [
-                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"]}
-                ],
-                "ng": [
                     { "L": ["watermelon"], "C": ["bella"], "R": ["silver","blank","bellb","cherrya"], "note":"1, 中段"},
                     { "L": ["watermelon"], "C": ["bella"], "R": ["bar","gold","cherryb"], "note":"8,13,16, 右上がり"},
                     {  "L": ["bar"],  "C": ["replay"],  "R": ["replay"], "note": "2, BAR上段→下段揃い"},
-                    {  "L": ["replay"],  "C": ["bella"],  "R": ["replay"], "note": "4,14, 右下がり"},
-                    {  "L": ["cherryb"],  "C": ["bella"],  "R": ["replay"], "note":"4,14,と並んでハズレ回避"}
+                    {  "L": ["replay"],  "C": ["bella"],  "R": ["replay"], "note": "4,14, 右下がり"}
+                    
+                ],
+                "ng": [
+
+                    { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
+                    { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
+                    { "L": ["cherryb", "replay"],  "C": ["bella"],  "R": ["replay"], "note":"ハズレ回避の右下がり and 目押しミス遅い"}
                 ]
             }
         },
         "リーチリプB1": {
-            "odds": "r",
+            "odds": {"ok":"r", "ng":"r"},
             "simplename": "リプ",
             "prob": {"6": 70},
             "push": { "L": [1], "C": null, "R": null},
@@ -55,7 +58,7 @@
             "stop":
                 { "L": [9,10,11,16,17,1,2,3,4,8], "C": [5,6,7,11,16,1], "R": null },
             "sup":
-                { "L": [11], "C": [2,3,4,6,7,8,15,16], "R": [20,1,2] },
+                { "L": [11], "C": [2,3,4,6,7,8,16], "R": [20,1,2] },
             "sym" : { 
                 "ok": [
                     {  "L": ["silver"], "C": ["replay"],  "R": ["watermelon"], "note": "上段白7直撃"},
@@ -71,7 +74,7 @@
             }
         },
         "リーチリプB2": {
-            "odds": "r",
+            "odds": {"ok":"r", "ng":"r"},
             "simplename": "リプ",
             "prob": {"6": 19},
             "push": { "L": [1], "C": null, "R": null},
@@ -93,7 +96,7 @@
             }
         },
         "リーチリプB3": {
-            "odds": "r",
+            "odds": {"ok":"r", "ng":"r"},
             "simplename": "リプ",
             "prob": {"6": 70},
             "push": { "L": [1], "C": null, "R": null},
@@ -118,7 +121,7 @@
             }
         },
         "リーチリプR1": {
-            "odds": "r",
+            "odds": {"ok":"r", "ng":"r"},
             "simplename": "リプ",
             "prob": {"6": 74},
             "push": { "L": [1], "C": null, "R": null},
@@ -141,7 +144,7 @@
             }
         },
         "リーチリプR2": {
-            "odds": "r",
+            "odds": {"ok":"r", "ng":"r"},
             "simplename": "リプ",
             "prob": {"6": 72},
             "push": { "L": [1], "C": null, "R": null},
@@ -161,7 +164,7 @@
             }
         },
         "3枚": {
-            "odds": 3,
+            "odds": {"ok":3, "ng":3},
             "simplename": "3枚",
             "prob": {"6": 1191},
             "push": { "L": [1], "C": null, "R": null},
@@ -186,7 +189,7 @@
             }
         },
         "リーチ3-B": {
-            "odds": 3,
+            "odds": {"ok":3, "ng":3},
             "simplename": "3枚",
             "prob": {"6": 42},
             "push": { "L": [1], "C": null, "R": null},
@@ -210,7 +213,7 @@
             }
         },
         "リーチ3-R": {
-            "odds": 3,
+            "odds": {"ok":3, "ng":3},
             "simplename": "3枚",
             "prob": {"6": 50},
             "push": { "L": [1], "C": null, "R": null},
@@ -254,51 +257,55 @@
         },
         "スイカ": {
             "odds": {"ok":10, "ng":0},
-            "simplename": "スイカ",
+            "simplename": {"ok":"スイカ","ng":"ハズレ"},
             "prob": {"6": 1580},
             "push": { "L": null, "C": null, "R": null },
             "pos": { "L": null, "C": null, "R": null },
             "stop": 
-                { "L": [1,3,8,9,10,13,15,16,17], "C": null, "R": null }
+                { "L": [1,3,8,9,10,13,15,16,17,18], "C": null, "R": null }
             ,
             "sup":[
-                { "L": null, "C": [12,17], "R": null }
+                { "L": [1,3,8,9,10,13,15,16,17], "C": null, "R": null }
             ],
             "sym": {
                 "ok":[
-                    { "L": ["bella"],  "C": ["watermelon"],  "R": ["watermelon"], "note": "3, 下段"},
-                    { "L": ["silver"], "C":["gold", "bar"],  "R": ["bella"], "note": "9, 17 中段"},
-                    { "L": ["watermelon"],  "C": ["cherrya"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"},
-                    { "L": ["gold"],  "C": ["watermelon"] ,  "R": ["watermelon"], "note": "15, 下段"}
+                    { "L": ["bella","gold","cherryb"],  "C": ["watermelon"],  "R": ["watermelon"], "note": "3,15, 18 下段"},
+                    { "L": ["silver","replay"], "C":["gold", "bar"],  "R": ["bella"], "note": "9, 17, 中段"},
+                    { "L": ["watermelon","cherrya"],  "C": ["cherrya"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
+
+
                 ],
                 "ng":[
-
+                    { "L": ["bella","gold","cherryb"],  "C": ["bella"],  "R": ["watermelon"], "note": "3,15,18 下段ハズレ"},
+                    { "L": ["silver","replay"], "C":["replay"],  "R": ["bella"], "note": "9, 17 中段"},
+                    { "L": ["watermelon","cherrya"],  "C": ["replay"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
                 ]
             }
         },
         "同時スイカ": {
             "odds": {"ok":10,"ng":0},
-            "simplename": "スイカ",
+            "simplename": {"ok":"スイカ","ng":"ハズレ"},
             "prob": {"6": 14},
             "push": { "L": null, "C": null, "R": null },
-            "pos": { "L": null, "C": null, "R": null },
+            "pos": { "L": null, "C": [7,8,9,10,11,12,13,14,15,16,17,18], "R": null },
             "stop": 
                 { "L": [1,3,8,9,10,13,15,16,17], "C": null, "R": null }
             ,
             "sup":
-                { "L": [3,10,16], "C": [12,17], "R": null }
+                { "L": [3,10,16], "C": [11,12,13,16,17,18], "R": null }
             ,
             "sym": {
                 "ok":[
-                    { "L": ["watermelon"], "C":["gold", "bar"],  "R": ["watermelon"] , "note":"1, 8, 16, 右下がり"},
-                    { "L": ["watermelon"], "C": ["gold", "bar"],  "R": ["replay"], "note": "1, 下段"},
-                    { "L": ["bella"],  "C": ["watermelon"],  "R": ["watermelon"], "note": "3, 下段"},
-                    { "L": ["silver"], "C":["gold", "bar"],  "R": ["bella"], "note": "9, 17 中段"},
-                    { "L": ["watermelon"],  "C": ["cherrya"],  "R": ["replay"], "note":"8, 16 上段"},
-                    { "L": ["gold"],  "C": ["watermelon"] ,  "R": ["watermelon"], "note": "15, 下段"}
+                    { "L": ["bella","gold","cherryb"],  "C": ["watermelon"],  "R": ["watermelon"], "note": "3,15, 18 下段"},
+                    { "L": ["silver","replay"], "C":["gold", "bar"],  "R": ["bella"], "note": "9, 17, 中段"},
+                    { "L": ["watermelon","cherrya"],  "C": ["cherrya"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
+
+
                 ],
                 "ng":[
-
+                    { "L": ["bella","gold","cherryb"],  "C": ["bella"],  "R": ["watermelon"], "note": "3,15,18 下段ハズレ"},
+                    { "L": ["silver","replay"], "C":["replay"],  "R": ["bella"], "note": "9, 17 中段"},
+                    { "L": ["watermelon","cherrya"],  "C": ["replay"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
                 ]
             }
         },
@@ -315,13 +322,8 @@
                     { "L": ["cherryb","gold","bella"],  "C": ["gold"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    {  "L": ["gold"],  "C": ["bella"], "R": ["bar","gold","cherryb"] },
-                    {  "L": ["bar"], "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
-                    {  "L": ["bella"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["replay"],  "C": ["replay"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["watermelon"], "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["silver"], "C": ["cherrya","blank"],  "R": ["replay"]},
-                    {  "L": ["bellb"], "C": ["gold","bar","silver","cherryb"],  "R": ["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -339,12 +341,8 @@
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["gold"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["cherrya"],  "C": ["bella"],  "R": ["watermelon"]},
-                    {  "L": ["bella"],  "C": ["replay"],  "R": ["watermelon"]},
-                    {  "L": ["replay"],  "C": ["replay"],  "R": ["replay"]},
-                    {  "L": ["watermelon"],  "C": ["bella"],  "R": ["bella"] }
-
+                    { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -362,8 +360,7 @@
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["gold"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
-                    {  "L": ["gold"], "C": ["watermelon","bellb"],  "R": ["bella"], "note": "右下がり3枚"},
+                    { "L": ["bar","silver","gold"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "上段3枚"},
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"], "note": "中段3枚"},
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ]
@@ -381,16 +378,11 @@
             "sym": {
                 "ok": [
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["silver"], "R": ["bar","gold","cherryb"] },
-                    { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cheryb"], "R": ["bar","gold","cherryb"] }
+                    { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cherryb"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    {  "L": ["gold"],  "C": ["bella"], "R": ["bar","gold","cherryb"] },
-                    {  "L": ["bar"], "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
-                    {  "L": ["bella"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["replay"],  "C": ["replay"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["watermelon"], "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["silver"], "C": ["cherrya","blank"],  "R": ["replay"]},
-                    {  "L": ["bellb"], "C": ["gold","bar","silver","cherryb"],  "R": ["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -405,14 +397,11 @@
             "sym": {
                 "ok": [
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["silver"], "R": ["bar","gold","cherryb"] },
-                    { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cheryb"], "R": ["bar","gold","cherryb"] }
+                    { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cherryb"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["cherrya"],  "C": ["bella"],  "R": ["watermelon"]},
-                    {  "L": ["bella"],  "C": ["replay"],  "R": ["watermelon"]},
-                    {  "L": ["replay"],  "C": ["replay"],  "R": ["replay"]},
-                    {  "L": ["watermelon"],  "C": ["bella"],  "R": ["bella"] }
+                    { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -427,11 +416,10 @@
             "sym": {
                 "ok": [
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["silver"], "R": ["bar","gold","cherryb"] },
-                    { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cheryb"], "R": ["bar","gold","cherryb"] }
+                    { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cherryb"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
-                    {  "L": ["gold"], "C": ["watermelon","bellb"],  "R": ["bella"], "note": "右下がり3枚"},
+                    { "L": ["bar","silver","gold"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "上段3枚"},
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"], "note": "中段3枚"},
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ]
@@ -443,20 +431,15 @@
             "prob": {"6": 7115},
             "push": { "L": [2,3],  "C": [1], "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
-            "stop": { "L": [2,5,9,13,16,19],  "C": [12], "R": null },
+            "stop": { "L": [1,5,8,13,16,19],  "C": [12], "R": null },
             "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok": [
-                    { "L": ["bar", "cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
+                    { "L": ["cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
                 ],
                 "ng": [
-                    {  "L": ["gold"],  "C": ["bella"], "R": ["bar","gold","cherryb"] },
-                    {  "L": ["bar"], "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
-                    {  "L": ["bella"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["replay"],  "C": ["replay"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["watermelon"], "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["silver"], "C": ["cherrya","blank"],  "R": ["replay"]},
-                    {  "L": ["bellb"], "C": ["gold","bar","silver","cherryb"],  "R": ["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -466,19 +449,16 @@
             "prob": {"6": 427},
             "push": { "L": [2,3],  "C": [1], "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
-            "stop": { "L": [2,5,9,13,16,19],  "C": [12], "R": null },
+            "stop": { "L": [1,5,8,13,16,19],  "C": [12], "R": null },
             "sup":
                 { "L": [5,7,8,13,18,20], "C": null, "R": null },
             "sym": {
                 "ok": [
-                    { "L": ["bar", "cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
+                    { "L": ["cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
                 ],
                 "ng":[
-                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["cherrya"],  "C": ["bella"],  "R": ["watermelon"]},
-                    {  "L": ["bella"],  "C": ["replay"],  "R": ["watermelon"]},
-                    {  "L": ["replay"],  "C": ["replay"],  "R": ["replay"]},
-                    {  "L": ["watermelon"],  "C": ["bella"],  "R": ["bella"] }
+                    { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -488,15 +468,14 @@
             "prob": {"6": 648},
             "push": { "L": [2,3],  "C": [1], "R": [2,3] },
             "pos": { "L": null, "C": [8,9,10,11,12], "R": null },
-            "stop": { "L": [2,5,9,13,16,19],  "C": [12], "R": null },
+            "stop": { "L": [1,5,8,13,16,19],  "C": [12], "R": null },
             "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok": [
-                    { "L": ["bar", "cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
+                    { "L": ["cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
                 ],
                 "ng":[
-                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
-                    {  "L": ["gold"], "C": ["watermelon","bellb"],  "R": ["bella"], "note": "右下がり3枚"},
+                    { "L": ["bar","silver","gold"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "上段3枚"},
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"], "note": "中段3枚"},
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ]
@@ -515,13 +494,8 @@
                     { "L": ["replay","cherryb"],  "C": ["replay"],  "R": ["gold"] }
                 ],
                 "ng": [
-                    {  "L": ["gold"],  "C": ["bella"], "R": ["bar","gold","cherryb"] },
-                    {  "L": ["bar"], "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
-                    {  "L": ["bella"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["replay"],  "C": ["replay"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["watermelon"], "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["silver"], "C": ["cherrya","blank"],  "R": ["replay"]},
-                    {  "L": ["bellb"], "C": ["gold","bar","silver","cherryb"],  "R": ["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -538,11 +512,8 @@
                     { "L": ["replay","cherryb"],  "C": ["replay"],  "R": ["gold"] }
                 ],
                 "ng":[
-                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["cherrya"],  "C": ["bella"],  "R": ["watermelon"]},
-                    {  "L": ["bella"],  "C": ["replay"],  "R": ["watermelon"]},
-                    {  "L": ["replay"],  "C": ["replay"],  "R": ["replay"]},
-                    {  "L": ["watermelon"],  "C": ["bella"],  "R": ["bella"] }
+                    { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -559,8 +530,7 @@
                     { "L": ["replay","cherryb"],  "C": ["replay"],  "R": ["gold"] }
                 ],
                 "ng":[
-                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
-                    {  "L": ["gold"], "C": ["watermelon","bellb"],  "R": ["bella"], "note": "右下がり3枚"},
+                    { "L": ["bar","silver","gold"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "上段3枚"},
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"], "note": "中段3枚"},
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ]
@@ -579,13 +549,8 @@
                     { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["cherryb"] }
                 ],
                 "ng":[
-                    {  "L": ["gold"],  "C": ["bella"], "R": ["bar","gold","cherryb"] },
-                    {  "L": ["bar"], "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
-                    {  "L": ["bella"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["replay"],  "C": ["replay"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["watermelon"], "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["silver"], "C": ["cherrya","blank"],  "R": ["replay"]},
-                    {  "L": ["bellb"], "C": ["gold","bar","silver","cherryb"],  "R": ["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -606,11 +571,8 @@
                     { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["cherrya"],  "C": ["bella"],  "R": ["watermelon"]},
-                    {  "L": ["bella"],  "C": ["replay"],  "R": ["watermelon"]},
-                    {  "L": ["replay"],  "C": ["replay"],  "R": ["replay"]},
-                    {  "L": ["watermelon"],  "C": ["bella"],  "R": ["bella"] }
+                    { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -627,8 +589,7 @@
                     { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
-                    {  "L": ["gold"], "C": ["watermelon","bellb"],  "R": ["bella"], "note": "右下がり3枚"},
+                    { "L": ["bar","silver","gold"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "上段3枚"},
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"], "note": "中段3枚"},
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ]
@@ -646,13 +607,8 @@
                     {"L": ["cherryb", "replay"],  "C": ["replay"],  "R": ["bar"]}
                 ],
                 "ng":[
-                    {  "L": ["gold"],  "C": ["bella"], "R": ["bar","gold","cherryb"] },
-                    {  "L": ["bar"], "C": ["watermelon","bellb"], "R": ["bar","gold","cherryb"]},
-                    {  "L": ["bella"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["replay"],  "C": ["replay"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["watermelon"], "C": ["gold","bar","silver","cherryb"], "R":["silver","blank","bellb","cherrya"]},
-                    {  "L": ["silver"], "C": ["cherrya","blank"],  "R": ["replay"]},
-                    {  "L": ["bellb"], "C": ["gold","bar","silver","cherryb"],  "R": ["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -673,11 +629,8 @@
                     {"L": ["cherryb", "replay"],  "C": ["replay"],  "R": ["bar"]}
                 ],
                 "ng":[
-                    { "L": ["cherryb", "replay"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["cherrya"],  "C": ["bella"],  "R": ["watermelon"]},
-                    {  "L": ["bella"],  "C": ["replay"],  "R": ["watermelon"]},
-                    {  "L": ["replay"],  "C": ["replay"],  "R": ["replay"]},
-                    {  "L": ["watermelon"],  "C": ["bella"],  "R": ["bella"] }
+                    { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -693,42 +646,85 @@
             "sup": { "L": [2,3,4,9,10,11,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok":[
-                    { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["cherryb"] }
+                    { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["gold","bar","cherryb"] }
                 ],
                 "ng":[
-                    { "L": ["bar","silver"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "BAR白7上段3枚"},
-                    {  "L": ["gold"], "C": ["watermelon","bellb"],  "R": ["bella"], "note": "右下がり3枚"},
+                    { "L": ["bar","silver","gold"], "C": ["gold","bar","silver","cherryb"], "R": ["silver","blank","bellb","cherrya"], "note": "上段3枚"},
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"], "note": "中段3枚"},
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ]
             }
         },
-        "ハズレ": {
+        "ハズレA": {
             "odds": {"ok":0, "ng":0},
-            "simplename": "ハズレ",
-            "prob": {"6": 4498},
-            "push": { "L": null, "C": null, "R": null },
-            "pos": { "L": null, "C": null, "R": null },
+            "simplename": {"ok":"ハズレ", "ng":"ハズレ"},
+            "prob": {"6": 2108},
+            "push": { "L": null, "C": [1], "R": null },
+            "pos": { "L": null, "C": [3,8,15,16], "R": null },
             "stop": 
-                { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null},
-            "sup": { "L": null, "C": null, "R": null },
+                { "L": null, "C": null, "R": null},
+            "sup": { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok":[
-                    
+                    { "L": ["watermelon", "cherrya"], "C": ["bellb"],  "R": ["bellb", "blank"] },
+                    { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] }
                 ],
                 "ng":[
-
+                    { "L": ["silver","gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["watermelon"]},
+                    { "L": ["bellb","replay","watermelon","bella"],"C": ["bella"], "R": ["watermelon"], "note": ""},
+                    { "L": ["gold","bar","bella","bellb"], "C":["gold","bar","silver","cherryb"], "R":["bella"]}
+                    
+                ]
+            }
+        },
+        "ハズレB": {
+            "odds": {"ok":0, "ng":0},
+            "simplename": {"ok":"ハズレ", "ng":"ハズレ"},
+            "prob": {"6": 1200},
+            "push": { "L": null, "C": [1], "R": null },
+            "pos": { "L": null, "C": [3,8,15,16], "R": null },
+            "stop": 
+                { "L": null, "C": null, "R": null},
+            "sup": { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok":[
+                    { "L": ["watermelon", "cherrya"], "C": ["bellb"],  "R": ["bellb", "blank"] },
+                    { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] }
+                ],
+                "ng":[
+                    { "L": ["gold","watermelon","replay"], "C": ["replay"],"R": ["silver","blank","bellb","cherrya"], "note": ""},
+                    { "L": ["gold","bar","bella","bellb"], "C":["gold","bar","silver","cherryb"], "R":["bella"]}
+                ]
+            }
+        },
+        "ハズレC": {
+            "odds": {"ok":0, "ng":0},
+            "simplename": {"ok":"ハズレ", "ng":"ハズレ"},
+            "prob": {"6": 1190},
+            "push": { "L": null, "C": [1], "R": null },
+            "pos": { "L": null, "C": [3,8,15,16], "R": null },
+            "stop": 
+                { "L": null, "C": null, "R": null},
+            "sup": { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null },
+            "sym": {
+                "ok":[
+                    { "L": ["watermelon", "cherrya"], "C": ["bellb"],  "R": ["bellb", "blank"] },
+                    { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] }
+                ],
+                "ng":[
+                    { "L": ["bellb","replay","watermelon","bella"],"C": ["replay"], "R": ["bella"], "note": ""},
+                    { "L": ["gold","bar","bella","bellb"], "C":["gold","bar","silver","cherryb"], "R":["bella"]}
                 ]
             }
         },
         "チャンス": {
             "odds": {"ok":0, "ng":0 },
-            "simplename": "ハズレ",
+            "simplename": {"ok":"ハズレ", "ng":"ハズレ"},
             "prob": {"6": 27},
             "push": {  "L": [1], "C": null, "R": null },
             "pos": { "L": null, "C": null, "R": null },
             "stop": 
-                { "L": [2,4,8,9,10,13,15,16,17], "C": null, "R": null }
+                { "L": [2,4,8,9,10,13,15,16,17], "C": [2,3,7,8,14,16], "R": null }
             ,
             "sup":
                 { "L": null, "C": null,  "R": [17] }
@@ -745,7 +741,9 @@
                     { "L": ["watermelon"],  "C": ["bella"],  "R": ["watermelon"]}
                 ],
                 "ng":[
-                   
+                    { "L": ["watermelon", "cherrya"], "C": ["bellb"],  "R": ["bellb", "blank"] },
+                    { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] },
+                    { "L": ["gold","bar","bella","bellb"], "C":["gold","bar","silver","cherryb"], "R":["bella"]}
                 ]
             } 
         },
