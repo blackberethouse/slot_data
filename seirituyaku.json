@@ -180,7 +180,7 @@
                     { "L": ["bellb","replay"],  "C": ["bella"],  "R": ["bella"], "note": "下段3枚"}
                 ],
                 "ng": [
-                    { "L": ["gold","silver","bar", "bellb", "replay"], "C": ["bellb","cherrya"],  "R": ["bella"], "note": "目押し成功1"},
+                    { "L": ["gold","bar", "bellb", "replay"], "C": ["bellb","cherrya"],  "R": ["bella"], "note": "目押し成功1"},
                     
                     { "L": ["gold","silver","bar","replay"],"C": ["gold","bar","silver","cherryb"],  "R": ["replay"], "note": "目押し失敗早い1" },
                     
@@ -205,7 +205,7 @@
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"]}
                 ],
                 "ng": [
-                    { "L": ["gold","silver","bar", "bellb", "replay"], "C": ["bellb","cherrya"],  "R": ["bella"], "note": "目押し成功1"},
+                    { "L": ["gold","bar", "bellb", "replay"], "C": ["bellb","cherrya"],  "R": ["bella"], "note": "目押し成功1"},
                     
                     { "L": ["gold","silver","bar","replay"],"C": ["gold","bar","silver","cherryb"],  "R": ["replay"], "note": "目押し失敗早い1" },
                     
@@ -229,7 +229,7 @@
                     { "L": ["bella","watermelon"], "C": ["watermelon","bellb"],  "R": ["replay"]}
                 ],
                 "ng": [
-                    { "L": ["gold","silver","bar", "bellb", "replay"], "C": ["bellb","cherrya"],  "R": ["bella"], "note": "目押し成功1"},
+                    { "L": ["gold","bar", "bellb", "replay"], "C": ["bellb","cherrya"],  "R": ["bella"], "note": "目押し成功1"},
                     
                     { "L": ["gold","silver","bar","replay"],"C": ["gold","bar","silver","cherryb"],  "R": ["replay"], "note": "目押し失敗早い1" },
                     
@@ -323,8 +323,8 @@
                     { "L": ["cherryb","gold","bella"],  "C": ["gold"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -382,8 +382,8 @@
                     { "L": ["cherryb","gold","bella","cherrya"],  "C": ["cherryb"], "R": ["bar","gold","cherryb"] }
                 ],
                 "ng":[
-                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -439,8 +439,8 @@
                     { "L": ["cherrya","watermelon"],  "C": ["bar"],  "R": ["bella"] }
                 ],
                 "ng": [
-                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -495,8 +495,8 @@
                     { "L": ["replay","cherryb"],  "C": ["replay"],  "R": ["gold"] }
                 ],
                 "ng": [
-                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -550,8 +550,8 @@
                     { "L": ["watermelon","cherrya"], "C": ["bellb","watermelon"],  "R": ["cherryb"] }
                 ],
                 "ng":[
-                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -608,8 +608,8 @@
                     {"L": ["cherryb", "replay"],  "C": ["replay"],  "R": ["bar"]}
                 ],
                 "ng":[
-                    {  "L": ["gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","silver","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -763,7 +763,8 @@
             "sym": {
                 "ok":[
                     { "L": ["gold"],  "C": ["cherrya"],  "R": ["bar"]},
-                    { "L": ["gold"],  "C": ["replay"],  "R": ["bella"]}
+                    { "L": ["gold"],  "C": ["replay"],  "R": ["bella"]},
+                    {"L": ["silver"], "C":["bella","bellb"], "R":["bella","bellb"]}
                 ],
                 "ng":[
                    
