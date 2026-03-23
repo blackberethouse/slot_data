@@ -1970,16 +1970,6 @@
         "R": "bella"
       },
       {
-        "L": "silver",
-        "C": "bellb",
-        "R": "bella"
-      },
-      {
-        "L": "silver",
-        "C": "cherrya",
-        "R": "bella"
-      },
-      {
         "L": "bar",
         "C": "bellb",
         "R": "bella"
@@ -2236,16 +2226,6 @@
         "R": "bella"
       },
       {
-        "L": "silver",
-        "C": "bellb",
-        "R": "bella"
-      },
-      {
-        "L": "silver",
-        "C": "cherrya",
-        "R": "bella"
-      },
-      {
         "L": "bar",
         "C": "bellb",
         "R": "bella"
@@ -2498,16 +2478,6 @@
       },
       {
         "L": "gold",
-        "C": "cherrya",
-        "R": "bella"
-      },
-      {
-        "L": "silver",
-        "C": "bellb",
-        "R": "bella"
-      },
-      {
-        "L": "silver",
         "C": "cherrya",
         "R": "bella"
       },
@@ -2914,12 +2884,12 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
+        "L": "silver",
         "C": "bella",
-        "R": "bella"
+        "R": "replay"
       },
       {
-        "L": "silver",
+        "L": "watermelon",
         "C": "bella",
         "R": "bella"
       },
@@ -3612,12 +3582,12 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
+        "L": "silver",
         "C": "bella",
-        "R": "bella"
+        "R": "replay"
       },
       {
-        "L": "silver",
+        "L": "watermelon",
         "C": "bella",
         "R": "bella"
       },
@@ -4320,12 +4290,12 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
+        "L": "silver",
         "C": "bella",
-        "R": "bella"
+        "R": "replay"
       },
       {
-        "L": "silver",
+        "L": "watermelon",
         "C": "bella",
         "R": "bella"
       },
@@ -4808,12 +4778,12 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
+        "L": "silver",
         "C": "bella",
-        "R": "bella"
+        "R": "replay"
       },
       {
-        "L": "silver",
+        "L": "watermelon",
         "C": "bella",
         "R": "bella"
       },
@@ -5306,12 +5276,12 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
+        "L": "silver",
         "C": "bella",
-        "R": "bella"
+        "R": "replay"
       },
       {
-        "L": "silver",
+        "L": "watermelon",
         "C": "bella",
         "R": "bella"
       },
@@ -5814,12 +5784,12 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
+        "L": "silver",
         "C": "bella",
-        "R": "bella"
+        "R": "replay"
       },
       {
-        "L": "silver",
+        "L": "watermelon",
         "C": "bella",
         "R": "bella"
       },
@@ -7062,6 +7032,26 @@
         "L": "gold",
         "C": "replay",
         "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bella"
+      },
+      {
+        "L": "silver",
+        "C": "bellb",
+        "R": "bellb"
       }
     ]
   },
@@ -7670,11 +7660,6 @@
       {
         "L": "silver",
         "C": "bellb",
-        "R": "bellb"
-      },
-      {
-        "L": "silver",
-        "C": "bellb",
         "R": "blank"
       },
       {
@@ -7746,6 +7731,11 @@
         "L": "silver",
         "C": "cherrya",
         "R": "cherryb"
+      },
+      {
+        "L": "silver",
+        "C": "cherrya",
+        "R": "bella"
       },
       {
         "L": "silver",
@@ -7815,17 +7805,7 @@
       {
         "L": "silver",
         "C": "bella",
-        "R": "bellb"
-      },
-      {
-        "L": "silver",
-        "C": "bella",
         "R": "blank"
-      },
-      {
-        "L": "silver",
-        "C": "bella",
-        "R": "replay"
       },
       {
         "L": "silver",
