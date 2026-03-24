@@ -30,19 +30,19 @@
             "simplename": "リプ",
             "prob": {"6": 8673},
             "push": { "L": [1],  "C": [2,3], "R": [2,3] },
-            "pos": { "L": null, "C": null, "R": null },
+            "pos": { "L": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], "C": null, "R": null },
             "stop": { "L": [1,2,4,8,13,14,16], "C": null, "R": null },
-            "sup" : { "L": null, "C": [2,3,4,6,7,8,14,16], "R": null},
+            "sup" : { "L": [1], "C": [2,3,4,6,7,8,14,16], "R": null},
             "sym" : {
                 "ok": [
-                    { "L": ["watermelon"], "C": ["bella"], "R": ["silver","blank","bellb","cherrya"], "note":"1, 中段"},
+                    
                     { "L": ["watermelon"], "C": ["bella"], "R": ["bar","gold","cherryb"], "note":"8,13,16, 右上がり"},
                     {  "L": ["bar"],  "C": ["replay"],  "R": ["replay"], "note": "2, BAR上段→下段揃い"},
                     {  "L": ["replay"],  "C": ["bella"],  "R": ["replay"], "note": "4,14, 右下がり"}
                     
                 ],
                 "ng": [
-
+                    { "L": ["watermelon"], "C": ["bella"], "R": ["silver","blank","bellb","cherrya"], "note":"1, 中段"},
                     { "L": ["replay","cherryb"], "C": ["bellb","cherrya"], "R": ["bar","gold","cherryb"], "note": "目押し成功"},
                     { "L": ["replay","bellb"], "C": ["silver","cherryb","gold","bar"], "R": ["bar","gold","cherryb"], "note": "目押しミス早い"},
                     { "L": ["cherryb", "replay"],  "C": ["bella"],  "R": ["replay"], "note":"ハズレ回避の右下がり and 目押しミス遅い"}
