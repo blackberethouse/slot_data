@@ -693,7 +693,7 @@
                     { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] }
                 ],
                 "ng":[
-                    { "L": ["gold","watermelon","replay","bar"], "C": ["replay"],"R": ["silver","blank","bellb","cherrya"], "note": ""}
+                    { "L": ["gold","watermelon","replay","bar","bellb"], "C": ["replay"],"R": ["silver","blank","bellb","cherrya"], "note": ""}
                 ]
             }
         },
