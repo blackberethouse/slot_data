@@ -271,7 +271,7 @@
             "sym": {
                 "ok":[
                     { "L": ["bella","gold","cherryb"],  "C": ["watermelon"],  "R": ["watermelon"], "note": "3,15, 18 下段"},
-                    { "L": ["silver","replay"], "C":["gold", "bar"],  "R": ["bella"], "note": "9, 17, 中段"},
+                    { "L": ["silver","replay","bellb"], "C":["gold", "bar"],  "R": ["bella"], "note": "9, 17, 中段"},
                     { "L": ["watermelon","cherrya"],  "C": ["cherrya"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
 
 
@@ -602,7 +602,8 @@
             "prob": {"6": 7115},
             "push": { "L": [2,3], "C": [2,3],  "R": [1] },
             "pos": {"L": null, "C": null, "R": [8,9,10,11,12]},
-            "stop": { "L": [2,3,4,8,9,10,13,14,15,16,17], "C": null,  "R": [12] },
+            "stop": { "L": null, "C": null,  "R": [12] },
+            "sup": {"L":[2,3,4,8,9,10,13,14,15,16,17], "C": null, "R": null },
             "sym": {
                 "ok":[
                     {"L": ["cherryb", "replay"],  "C": ["replay"],  "R": ["bar"]}
@@ -740,8 +741,8 @@
                 ],
                 "ng":[
                     { "L": ["watermelon", "cherrya"], "C": ["bellb"],  "R": ["bellb", "blank"] },
-                    { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] },
-                    { "L": ["gold","bar","bella","bellb"], "C":["gold","bar","silver","cherryb"], "R":["bella"]}
+                    { "L": ["watermelon","cherrya"], "C": ["cherrya"],  "R": ["bella"] }
+                    
                 ]
             } 
         },
