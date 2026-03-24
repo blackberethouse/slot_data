@@ -4,26 +4,6 @@
       {
         "L": "watermelon",
         "C": "bella",
-        "R": "silver"
-      },
-      {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "blank"
-      },
-      {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bellb"
-      },
-      {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "cherrya"
-      },
-      {
-        "L": "watermelon",
-        "C": "bella",
         "R": "bar"
       },
       {
@@ -48,6 +28,26 @@
       }
     ],
     "ng": [
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "silver"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "blank"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "bellb"
+      },
+      {
+        "L": "watermelon",
+        "C": "bella",
+        "R": "cherrya"
+      },
       {
         "L": "replay",
         "C": "bellb",
