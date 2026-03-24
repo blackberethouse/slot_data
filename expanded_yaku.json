@@ -6481,6 +6481,26 @@
         "L": "replay",
         "C": "replay",
         "R": "cherrya"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "bar",
+        "C": "replay",
+        "R": "cherrya"
       }
     ]
   },
@@ -7316,26 +7336,6 @@
         "L": "bar",
         "C": "replay",
         "R": "cherryb"
-      },
-      {
-        "L": "bar",
-        "C": "replay",
-        "R": "silver"
-      },
-      {
-        "L": "bar",
-        "C": "replay",
-        "R": "cherrya"
-      },
-      {
-        "L": "bar",
-        "C": "replay",
-        "R": "bellb"
-      },
-      {
-        "L": "bar",
-        "C": "replay",
-        "R": "blank"
       },
       {
         "L": "bar",
