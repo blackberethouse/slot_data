@@ -6501,6 +6501,26 @@
         "L": "bar",
         "C": "replay",
         "R": "cherrya"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "silver"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "blank"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "bellb"
+      },
+      {
+        "L": "bellb",
+        "C": "replay",
+        "R": "cherrya"
       }
     ]
   },
@@ -8146,26 +8166,6 @@
         "L": "bellb",
         "C": "replay",
         "R": "cherryb"
-      },
-      {
-        "L": "bellb",
-        "C": "replay",
-        "R": "silver"
-      },
-      {
-        "L": "bellb",
-        "C": "replay",
-        "R": "cherrya"
-      },
-      {
-        "L": "bellb",
-        "C": "replay",
-        "R": "bellb"
-      },
-      {
-        "L": "bellb",
-        "C": "replay",
-        "R": "blank"
       },
       {
         "L": "bellb",
