@@ -278,7 +278,7 @@
                 ],
                 "ng":[
                     { "L": ["bella","gold","cherryb"],  "C": ["bella"],  "R": ["watermelon"], "note": "3,15,18 下段ハズレ"},
-                    { "L": ["silver","replay"], "C":["replay"],  "R": ["bella"], "note": "9, 17 中段"},
+                    { "L": ["silver","replay","bellb"], "C":["replay"],  "R": ["bella"], "note": "9, 17 中段"},
                     { "L": ["watermelon","cherrya"],  "C": ["replay"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
                 ]
             }
@@ -305,7 +305,7 @@
                 ],
                 "ng":[
                     { "L": ["bella","gold","cherryb"],  "C": ["bella"],  "R": ["watermelon"], "note": "3,15,18 下段ハズレ"},
-                    { "L": ["silver","replay"], "C":["replay"],  "R": ["bella"], "note": "9, 17 中段"},
+                    { "L": ["silver","replay","bellb"], "C":["replay"],  "R": ["bella"], "note": "9, 17 中段"},
                     { "L": ["watermelon","cherrya"],  "C": ["replay"],  "R": ["replay"], "note":"1, 8, 13, 16 上段"}
                 ]
             }
