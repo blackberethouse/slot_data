@@ -2680,6 +2680,16 @@
         "R": "bella"
       },
       {
+        "L": "bellb",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
         "L": "watermelon",
         "C": "cherrya",
         "R": "replay"
@@ -6698,86 +6708,6 @@
         "L": "cherrya",
         "C": "cherrya",
         "R": "bella"
-      },
-      {
-        "L": "gold",
-        "C": "gold",
-        "R": "bella"
-      },
-      {
-        "L": "gold",
-        "C": "bar",
-        "R": "bella"
-      },
-      {
-        "L": "gold",
-        "C": "silver",
-        "R": "bella"
-      },
-      {
-        "L": "gold",
-        "C": "cherryb",
-        "R": "bella"
-      },
-      {
-        "L": "bar",
-        "C": "gold",
-        "R": "bella"
-      },
-      {
-        "L": "bar",
-        "C": "bar",
-        "R": "bella"
-      },
-      {
-        "L": "bar",
-        "C": "silver",
-        "R": "bella"
-      },
-      {
-        "L": "bar",
-        "C": "cherryb",
-        "R": "bella"
-      },
-      {
-        "L": "bella",
-        "C": "gold",
-        "R": "bella"
-      },
-      {
-        "L": "bella",
-        "C": "bar",
-        "R": "bella"
-      },
-      {
-        "L": "bella",
-        "C": "silver",
-        "R": "bella"
-      },
-      {
-        "L": "bella",
-        "C": "cherryb",
-        "R": "bella"
-      },
-      {
-        "L": "bellb",
-        "C": "gold",
-        "R": "bella"
-      },
-      {
-        "L": "bellb",
-        "C": "bar",
-        "R": "bella"
-      },
-      {
-        "L": "bellb",
-        "C": "silver",
-        "R": "bella"
-      },
-      {
-        "L": "bellb",
-        "C": "cherryb",
-        "R": "bella"
       }
     ]
   },
@@ -6820,6 +6750,11 @@
       {
         "L": "gold",
         "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "gold",
         "R": "watermelon"
       },
       {
@@ -6840,12 +6775,27 @@
       {
         "L": "gold",
         "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "bar",
         "R": "watermelon"
       },
       {
         "L": "gold",
         "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "gold",
+        "C": "silver",
         "R": "watermelon"
+      },
+      {
+        "L": "gold",
+        "C": "cherryb",
+        "R": "bella"
       },
       {
         "L": "gold",
@@ -7054,6 +7004,11 @@
       },
       {
         "L": "bar",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
         "C": "bar",
         "R": "gold"
       },
@@ -7066,6 +7021,11 @@
         "L": "bar",
         "C": "bar",
         "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "bar",
+        "R": "bella"
       },
       {
         "L": "bar",
@@ -7084,6 +7044,11 @@
       },
       {
         "L": "bar",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bar",
         "C": "cherryb",
         "R": "gold"
       },
@@ -7096,6 +7061,11 @@
         "L": "bar",
         "C": "cherryb",
         "R": "cherryb"
+      },
+      {
+        "L": "bar",
+        "C": "cherryb",
+        "R": "bella"
       },
       {
         "L": "bar",
@@ -7629,6 +7599,11 @@
       },
       {
         "L": "bella",
+        "C": "gold",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
         "C": "bar",
         "R": "gold"
       },
@@ -7664,6 +7639,11 @@
       },
       {
         "L": "bella",
+        "C": "bar",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
         "C": "silver",
         "R": "silver"
       },
@@ -7684,6 +7664,11 @@
       },
       {
         "L": "bella",
+        "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
         "C": "cherryb",
         "R": "silver"
       },
@@ -7701,6 +7686,11 @@
         "L": "bella",
         "C": "cherryb",
         "R": "blank"
+      },
+      {
+        "L": "bella",
+        "C": "cherryb",
+        "R": "bella"
       },
       {
         "L": "bella",
@@ -7905,7 +7895,17 @@
       {
         "L": "bellb",
         "C": "silver",
+        "R": "bella"
+      },
+      {
+        "L": "bellb",
+        "C": "silver",
         "R": "replay"
+      },
+      {
+        "L": "bellb",
+        "C": "cherryb",
+        "R": "bella"
       },
       {
         "L": "bellb",
