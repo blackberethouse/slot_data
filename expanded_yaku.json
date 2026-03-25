@@ -2909,19 +2909,14 @@
         "R": "replay"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -3607,19 +3602,14 @@
         "R": "replay"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -4315,19 +4305,14 @@
         "R": "replay"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -4803,19 +4788,14 @@
         "R": "replay"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -5301,19 +5281,14 @@
         "R": "replay"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -5809,19 +5784,14 @@
         "R": "replay"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -6792,6 +6762,21 @@
         "L": "silver",
         "C": "bellb",
         "R": "bellb"
+      },
+      {
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
