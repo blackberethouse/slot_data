@@ -324,7 +324,7 @@
                 ],
                 "ng":[
                     {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -343,7 +343,7 @@
                 ],
                 "ng":[
                     { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -383,7 +383,7 @@
                 ],
                 "ng":[
                     {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -402,7 +402,7 @@
                 ],
                 "ng":[
                     { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -440,7 +440,7 @@
                 ],
                 "ng": [
                     {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -459,7 +459,7 @@
                 ],
                 "ng":[
                     { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -496,7 +496,7 @@
                 ],
                 "ng": [
                     {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -514,7 +514,7 @@
                 ],
                 "ng":[
                     { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -551,7 +551,7 @@
                 ],
                 "ng":[
                     {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -573,7 +573,7 @@
                 ],
                 "ng":[
                     { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
@@ -610,7 +610,7 @@
                 ],
                 "ng":[
                     {  "L": ["gold", "bar","bella","bellb","silver"],  "C": ["bella"],  "R": ["replay"]},
-                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
+                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
                 ]
             }
         },
@@ -632,7 +632,7 @@
                 ],
                 "ng":[
                     { "L": ["cherryb", "replay","cherrya"], "C": ["cherrya","blank"], "R": ["silver","blank","bellb","cherrya"] },
-                    {  "L": ["bella","replay", "watermelon"],  "C": ["replay"],  "R": ["watermelon"]}
+                    {  "L": ["watermelon","bella"], "C": ["bella"], "R":["bella"]}
                 ]
             }
         },
