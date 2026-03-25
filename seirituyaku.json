@@ -673,7 +673,7 @@
                 ],
                 "ng":[
                     { "L": ["silver","gold", "bar","bella","bellb"],  "C": ["bella"],  "R": ["watermelon"]},
-                    { "L": ["bellb","replay","watermelon","bella"],"C": ["bella"], "R": ["watermelon"], "note": ""}
+                    { "L": ["bellb","replay","watermelon"],"C": ["bella"], "R": ["watermelon"], "note": ""}
                     
                 ]
             }
