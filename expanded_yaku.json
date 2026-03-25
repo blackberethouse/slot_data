@@ -2909,14 +2909,19 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bella"
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
       },
       {
-        "L": "bella",
-        "C": "bella",
-        "R": "bella"
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
@@ -3105,19 +3110,14 @@
         "R": "cherrya"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -3607,14 +3607,19 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bella"
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
       },
       {
-        "L": "bella",
-        "C": "bella",
-        "R": "bella"
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
@@ -3863,19 +3868,14 @@
         "R": "cherrya"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -4315,14 +4315,19 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bella"
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
       },
       {
-        "L": "bella",
-        "C": "bella",
-        "R": "bella"
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
@@ -4461,19 +4466,14 @@
         "R": "cherrya"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -4803,14 +4803,19 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bella"
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
       },
       {
-        "L": "bella",
-        "C": "bella",
-        "R": "bella"
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
@@ -4949,19 +4954,14 @@
         "R": "cherrya"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -5301,14 +5301,19 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bella"
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
       },
       {
-        "L": "bella",
-        "C": "bella",
-        "R": "bella"
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
@@ -5457,19 +5462,14 @@
         "R": "cherrya"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
@@ -5809,14 +5809,19 @@
         "R": "replay"
       },
       {
-        "L": "watermelon",
-        "C": "bella",
-        "R": "bella"
+        "L": "bella",
+        "C": "replay",
+        "R": "watermelon"
       },
       {
-        "L": "bella",
-        "C": "bella",
-        "R": "bella"
+        "L": "replay",
+        "C": "replay",
+        "R": "watermelon"
+      },
+      {
+        "L": "watermelon",
+        "C": "replay",
+        "R": "watermelon"
       }
     ]
   },
@@ -5955,19 +5960,14 @@
         "R": "cherrya"
       },
       {
-        "L": "bella",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
-        "L": "replay",
-        "C": "replay",
-        "R": "watermelon"
-      },
-      {
         "L": "watermelon",
-        "C": "replay",
-        "R": "watermelon"
+        "C": "bella",
+        "R": "bella"
+      },
+      {
+        "L": "bella",
+        "C": "bella",
+        "R": "bella"
       }
     ]
   },
